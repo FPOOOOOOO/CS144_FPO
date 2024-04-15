@@ -1,3 +1,5 @@
+///home/cs144/minnow/src/tcp_sender.hh
+
 #pragma once
 
 #include "byte_stream.hh"
@@ -45,7 +47,23 @@ public:
 
 private:
   // Variables initialized in constructor
+  TCPSenderMessage make_message( uint64_t seqno, std::string payload, bool SYN, bool FIN = false ) const;
+
   ByteStream input_;
   Wrap32 isn_;
   uint64_t initial_RTO_ms_;
+
+  uint64_t timer_ {};  //tick counter
+  uint64_t RTO_timeout_ {initial_RTO_ms_}; 
+  uint64_t window_size_ {1};  //now sending windows size
+  uint64_t consecutive_retransmissions_cnt_ {};
+
+  uint64_t next_absolute_seqno_ {};
+  uint64_t acked_seqno_ {};
+  uint64_t sequence_numbers_in_flight_cnt_ {};
+
+  bool is_active_ {};
+  bool syn_flag_ {}, fin_flag_ {}, sent_syn_ {}, sent_fin_ {};
+
+  std::queue<TCPSenderMessage> outstanding_seg_ {};
 };

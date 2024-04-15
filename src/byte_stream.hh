@@ -1,8 +1,10 @@
+// /home/cs144/minnow/src/byte_stream.hh
 #pragma once
 
 #include <cstdint>
 #include <string>
 #include <string_view>
+#include <deque>
 
 class Reader;
 class Writer;
@@ -24,7 +26,14 @@ public:
 protected:
   // Please add any additional state to the ByteStream here, and not to the Writer and Reader interfaces.
   uint64_t capacity_;
-  bool error_ {};
+  uint64_t bytes_pushed_ {};
+  uint64_t bytes_popped_ {};
+
+  std::deque<std::string> buffer_ {};
+  std::string_view buffer_view_ {};
+
+  bool is_close_ {};  //false
+  bool error_ {};  //false 
 };
 
 class Writer : public ByteStream

@@ -1,0 +1,124 @@
+Start testing: Apr 15 10:11 UTC
+----------------------------------------------------------
+1/39 Testing: compile with bug-checkers
+1/39 Test: compile with bug-checkers
+Command: "/usr/bin/cmake" "--build" "/home/cs144/minnow/fpo" "-t" "functionality_testing" "webget"
+Directory: /home/cs144/minnow/fpo
+"compile with bug-checkers" start time: Apr 15 10:11 UTC
+Output:
+----------------------------------------------------------
+make[4]: warning: -j2 forced in submake: resetting jobserver mode.
+[  1%] Built target minnow_testing_debug
+[  8%] Built target util_debug
+[ 13%] Built target minnow_debug
+[ 14%] Built target minnow_testing_sanitized
+[ 21%] Built target util_sanitized
+[ 26%] Built target minnow_sanitized
+[ 27%] Built target byte_stream_capacity
+[ 27%] Built target byte_stream_basics
+[ 28%] Built target byte_stream_one_write_sanitized
+[ 29%] Built target byte_stream_one_write
+[ 30%] Built target byte_stream_two_writes_sanitized
+[ 32%] Built target byte_stream_two_writes
+[ 33%] Built target byte_stream_many_writes_sanitized
+[ 34%] Built target byte_stream_many_writes
+[ 35%] Built target byte_stream_stress_test_sanitized
+[ 36%] Built target byte_stream_stress_test
+[ 38%] Built target reassembler_single_sanitized
+[ 39%] Built target reassembler_single
+[ 40%] Built target reassembler_cap_sanitized
+[ 41%] Built target reassembler_cap
+[ 42%] Built target reassembler_seq_sanitized
+[ 44%] Built target reassembler_seq
+[ 45%] Built target reassembler_dup_sanitized
+[ 46%] Built target reassembler_dup
+[ 47%] Built target reassembler_holes_sanitized
+[ 48%] Built target reassembler_holes
+[ 50%] Built target reassembler_overlapping_sanitized
+[ 51%] Built target reassembler_overlapping
+[ 52%] Built target reassembler_win_sanitized
+[ 53%] Built target reassembler_win
+[ 54%] Built target wrapping_integers_cmp_sanitized
+[ 55%] Built target wrapping_integers_cmp
+[ 57%] Built target wrapping_integers_wrap_sanitized
+[ 58%] Built target wrapping_integers_wrap
+[ 60%] Built target wrapping_integers_unwrap_sanitized
+[ 60%] Built target wrapping_integers_unwrap
+[ 63%] Built target wrapping_integers_roundtrip_sanitized
+[ 63%] Built target wrapping_integers_roundtrip
+[ 65%] Built target wrapping_integers_extra_sanitized
+[ 65%] Built target wrapping_integers_extra
+[ 67%] Built target recv_connect_sanitized
+[ 67%] Built target recv_connect
+[ 69%] Built target recv_transmit_sanitized
+[ 70%] Built target recv_transmit
+[ 71%] Built target recv_window_sanitized
+[ 72%] Built target recv_window
+[ 73%] Built target recv_reorder_sanitized
+[ 75%] Built target recv_reorder
+[ 76%] Built target recv_reorder_more_sanitized
+[ 77%] Built target recv_reorder_more
+[ 78%] Built target recv_close_sanitized
+[ 79%] Built target recv_close
+[ 80%] Built target recv_special_sanitized
+[ 80%] Built target recv_special
+[ 82%] Built target send_connect_sanitized
+[ 83%] Built target send_connect
+[ 84%] Built target send_transmit
+[ 85%] Built target send_transmit_sanitized
+[ 86%] Built target send_retx_sanitized
+[ 88%] Built target send_retx
+[ 89%] Built target send_window_sanitized
+[ 90%] Built target send_window
+[ 91%] Built target send_ack_sanitized
+[ 92%] Built target send_ack
+[ 95%] Built target send_close_sanitized
+[ 95%] Built target send_close
+[ 96%] Built target send_extra_sanitized
+[ 97%] Built target send_extra
+[ 98%] Built target byte_stream_basics_sanitized
+[100%] Built target byte_stream_capacity_sanitized
+[100%] Built target functionality_testing
+[  8%] Built target stream_copy
+[ 58%] Built target util_debug
+[ 91%] Built target minnow_debug
+[ 91%] [32mBuilding CXX object apps/CMakeFiles/webget.dir/webget.cc.o[0m
+[100%] [32m[1mLinking CXX executable webget[0m
+[100%] Built target webget
+<end of output>
+Test time =   4.98 sec
+----------------------------------------------------------
+Test Passed.
+"compile with bug-checkers" end time: Apr 15 10:11 UTC
+"compile with bug-checkers" time elapsed: 00:00:04
+----------------------------------------------------------
+
+2/39 Testing: t_webget
+2/39 Test: t_webget
+Command: "/home/cs144/minnow/tests/webget_t.sh" "/home/cs144/minnow/fpo"
+Directory: /home/cs144/minnow/fpo
+"t_webget" start time: Apr 15 10:11 UTC
+Output:
+----------------------------------------------------------
+DEBUG: minnow connecting to 104.196.238.229:80...
+DEBUG: minnow successfully connected to 104.196.238.229:80.
+HTTP/1.1 200 OK
+Content-type: text/plain
+
+7SmXqWkrLKzVBCEalbSPqBcvs11Pw263K7x4Wv3JckI
+DEBUG: minnow inbound stream from 104.196.238.229:80 finished cleanly.
+Function called: get_URL(cs144.keithw.org, /nph-hasher/xyzzy)
+Warning: unclean shutdown of TCPMinnowSocket
+DEBUG: minnow outbound stream to 104.196.238.229:80 finished (0 seqnos still in flight).
+Exception in TCPConnection runner thread: shutdown: Bad file descriptor
+terminate called after throwing an instance of 'std::exception'
+  what():  std::exception
+<end of output>
+Test time =   1.47 sec
+----------------------------------------------------------
+Test Passed.
+"t_webget" end time: Apr 15 10:11 UTC
+"t_webget" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Apr 15 10:11 UTC

@@ -5,13 +5,32 @@
 #include <span>
 #include <string>
 
+#include "tcp_minnow_socket.hh"
+
 using namespace std;
 
 void get_URL( const string& host, const string& path )
 {
+  // GET /hello HTTP/1.1
+  // Host: cs144.keithw.org
+  // Connection: close
+
+  //TCPSocket fpos;
+  CS144TCPSocket fpos;
+  std::string output;
+  fpos.connect(Address(host,"http"));
+  fpos.write("GET " + path + " HTTP/1.1\r\n");
+  fpos.write("Host: " + host + "\r\n");
+  fpos.write("Connection: close\r\n\r\n");   //这里有两个\r\n需要注意
+  while(!fpos.eof()){
+    fpos.read(output);
+    cout << output;
+  }
+  fpos.close();
   cerr << "Function called: get_URL(" << host << ", " << path << ")\n";
-  cerr << "Warning: get_URL() has not been implemented yet.\n";
+  // cerr << "Warning: get_URL() has not been implemented yet.\n";
 }
+
 
 int main( int argc, char* argv[] )
 {

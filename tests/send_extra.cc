@@ -261,10 +261,13 @@ int main()
       test.execute( ExpectSeqno { isn + 4 } );
       test.execute( ExpectSeqnosInFlight { 3 } );
       test.execute( AckReceived { Wrap32 { isn + 2 } }.with_win( 2 ) );
+      test.execute( ExpectSeqnosInFlight { 3 } );
       test.execute( ExpectNoSegment {} );
       test.execute( AckReceived { Wrap32 { isn + 3 } }.with_win( 1 ) );
+      test.execute( ExpectSeqnosInFlight { 3 } );
       test.execute( ExpectNoSegment {} );
       test.execute( AckReceived { Wrap32 { isn + 4 } }.with_win( 1 ) );
+      test.execute( ExpectSeqnosInFlight { 1 } );
       test.execute( ExpectMessage {}.with_payload_size( 0 ).with_seqno( isn + 4 ).with_fin( true ) );
     }
 

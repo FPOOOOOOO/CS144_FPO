@@ -1,6 +1,8 @@
+// /home/cs144/minnow/src/reassembler.hh
 #pragma once
 
 #include "byte_stream.hh"
+#include "map"
 
 class Reassembler
 {
@@ -38,8 +40,16 @@ public:
   const Reader& reader() const { return output_.reader(); }
 
   // Access output stream writer, but const-only (can't write from outside)
+
   const Writer& writer() const { return output_.writer(); }
+  //Writer& writer() { return output_.writer(); }
 
 private:
   ByteStream output_; // the Reassembler writes to this ByteStream
+  std::map<uint64_t, std::string> unassembled_substrings_ {};
+  uint64_t unassembled_bytes_ { 0 };
+  uint64_t unassembled_index_ { 0 };
+
+  bool closed_ { false };
+  bool is_closed_() const;  //means in reassemble class is about to close, different from the is_closed in bytestream class
 };
