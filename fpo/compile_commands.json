@@ -241,6 +241,12 @@
 },
 {
   "directory": "/home/cs144/minnow/fpo/src",
+  "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -o CMakeFiles/minnow_debug.dir/router.cc.o -c /home/cs144/minnow/src/router.cc",
+  "file": "/home/cs144/minnow/src/router.cc",
+  "output": "src/CMakeFiles/minnow_debug.dir/router.cc.o"
+},
+{
+  "directory": "/home/cs144/minnow/fpo/src",
   "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -o CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o -c /home/cs144/minnow/src/tcp_minnow_socket.cc",
   "file": "/home/cs144/minnow/src/tcp_minnow_socket.cc",
   "output": "src/CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o"
@@ -289,6 +295,12 @@
 },
 {
   "directory": "/home/cs144/minnow/fpo/src",
+  "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address -o CMakeFiles/minnow_sanitized.dir/router.cc.o -c /home/cs144/minnow/src/router.cc",
+  "file": "/home/cs144/minnow/src/router.cc",
+  "output": "src/CMakeFiles/minnow_sanitized.dir/router.cc.o"
+},
+{
+  "directory": "/home/cs144/minnow/fpo/src",
   "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address -o CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o -c /home/cs144/minnow/src/tcp_minnow_socket.cc",
   "file": "/home/cs144/minnow/src/tcp_minnow_socket.cc",
   "output": "src/CMakeFiles/minnow_sanitized.dir/tcp_minnow_socket.cc.o"
@@ -334,6 +346,12 @@
   "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -O2 -o CMakeFiles/minnow_optimized.dir/reassembler.cc.o -c /home/cs144/minnow/src/reassembler.cc",
   "file": "/home/cs144/minnow/src/reassembler.cc",
   "output": "src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o"
+},
+{
+  "directory": "/home/cs144/minnow/fpo/src",
+  "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -O2 -o CMakeFiles/minnow_optimized.dir/router.cc.o -c /home/cs144/minnow/src/router.cc",
+  "file": "/home/cs144/minnow/src/router.cc",
+  "output": "src/CMakeFiles/minnow_optimized.dir/router.cc.o"
 },
 {
   "directory": "/home/cs144/minnow/fpo/src",
@@ -766,6 +784,18 @@
   "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -o CMakeFiles/net_interface.dir/net_interface.cc.o -c /home/cs144/minnow/tests/net_interface.cc",
   "file": "/home/cs144/minnow/tests/net_interface.cc",
   "output": "tests/CMakeFiles/net_interface.dir/net_interface.cc.o"
+},
+{
+  "directory": "/home/cs144/minnow/fpo/tests",
+  "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address -o CMakeFiles/router_sanitized.dir/router.cc.o -c /home/cs144/minnow/tests/router.cc",
+  "file": "/home/cs144/minnow/tests/router.cc",
+  "output": "tests/CMakeFiles/router_sanitized.dir/router.cc.o"
+},
+{
+  "directory": "/home/cs144/minnow/fpo/tests",
+  "command": "/usr/bin/c++  -I/home/cs144/minnow/util -I/home/cs144/minnow/src  -Wall -Wpedantic -Wextra -Weffc++ -Werror -Wshadow -Wpointer-arith -Wcast-qual -Wformat=2 -Wno-unqualified-std-cast-call -Wno-non-virtual-dtor -g -std=gnu++20 -o CMakeFiles/router.dir/router.cc.o -c /home/cs144/minnow/tests/router.cc",
+  "file": "/home/cs144/minnow/tests/router.cc",
+  "output": "tests/CMakeFiles/router.dir/router.cc.o"
 },
 {
   "directory": "/home/cs144/minnow/fpo/tests",

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/minnow_debug.dir/network_interface.cc.o.d"
   "CMakeFiles/minnow_debug.dir/reassembler.cc.o"
   "CMakeFiles/minnow_debug.dir/reassembler.cc.o.d"
+  "CMakeFiles/minnow_debug.dir/router.cc.o"
+  "CMakeFiles/minnow_debug.dir/router.cc.o.d"
   "CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o"
   "CMakeFiles/minnow_debug.dir/tcp_minnow_socket.cc.o.d"
   "CMakeFiles/minnow_debug.dir/tcp_receiver.cc.o"

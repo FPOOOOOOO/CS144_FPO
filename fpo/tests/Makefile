@@ -1107,6 +1107,34 @@ net_interface/fast:
 .PHONY : net_interface/fast
 
 # Convenience name for target.
+tests/CMakeFiles/router_sanitized.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/router_sanitized.dir/rule
+.PHONY : tests/CMakeFiles/router_sanitized.dir/rule
+
+# Convenience name for target.
+router_sanitized: tests/CMakeFiles/router_sanitized.dir/rule
+.PHONY : router_sanitized
+
+# fast build rule for target.
+router_sanitized/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router_sanitized.dir/build.make tests/CMakeFiles/router_sanitized.dir/build
+.PHONY : router_sanitized/fast
+
+# Convenience name for target.
+tests/CMakeFiles/router.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/router.dir/rule
+.PHONY : tests/CMakeFiles/router.dir/rule
+
+# Convenience name for target.
+router: tests/CMakeFiles/router.dir/rule
+.PHONY : router
+
+# fast build rule for target.
+router/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router.dir/build.make tests/CMakeFiles/router.dir/build
+.PHONY : router/fast
+
+# Convenience name for target.
 tests/CMakeFiles/byte_stream_speed_test.dir/rule:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_speed_test.dir/rule
 .PHONY : tests/CMakeFiles/byte_stream_speed_test.dir/rule
@@ -1776,6 +1804,33 @@ recv_window.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_window.dir/build.make tests/CMakeFiles/recv_window.dir/recv_window.cc.s
 .PHONY : recv_window.cc.s
 
+router.o: router.cc.o
+.PHONY : router.o
+
+# target to build an object file
+router.cc.o:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router_sanitized.dir/build.make tests/CMakeFiles/router_sanitized.dir/router.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router.dir/build.make tests/CMakeFiles/router.dir/router.cc.o
+.PHONY : router.cc.o
+
+router.i: router.cc.i
+.PHONY : router.i
+
+# target to preprocess a source file
+router.cc.i:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router_sanitized.dir/build.make tests/CMakeFiles/router_sanitized.dir/router.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router.dir/build.make tests/CMakeFiles/router.dir/router.cc.i
+.PHONY : router.cc.i
+
+router.s: router.cc.s
+.PHONY : router.s
+
+# target to generate assembly for a file
+router.cc.s:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router_sanitized.dir/build.make tests/CMakeFiles/router_sanitized.dir/router.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router.dir/build.make tests/CMakeFiles/router.dir/router.cc.s
+.PHONY : router.cc.s
+
 send_ack.o: send_ack.cc.o
 .PHONY : send_ack.o
 
@@ -2157,6 +2212,8 @@ help:
 	@echo "... recv_transmit_sanitized"
 	@echo "... recv_window"
 	@echo "... recv_window_sanitized"
+	@echo "... router"
+	@echo "... router_sanitized"
 	@echo "... send_ack"
 	@echo "... send_ack_sanitized"
 	@echo "... send_close"
@@ -2253,6 +2310,9 @@ help:
 	@echo "... recv_window.o"
 	@echo "... recv_window.i"
 	@echo "... recv_window.s"
+	@echo "... router.o"
+	@echo "... router.i"
+	@echo "... router.s"
 	@echo "... send_ack.o"
 	@echo "... send_ack.i"
 	@echo "... send_ack.s"

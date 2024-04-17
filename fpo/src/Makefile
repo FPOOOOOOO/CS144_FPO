@@ -288,6 +288,36 @@ reassembler.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/reassembler.cc.s
 .PHONY : reassembler.cc.s
 
+router.o: router.cc.o
+.PHONY : router.o
+
+# target to build an object file
+router.cc.o:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/router.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/router.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/router.cc.o
+.PHONY : router.cc.o
+
+router.i: router.cc.i
+.PHONY : router.i
+
+# target to preprocess a source file
+router.cc.i:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/router.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/router.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/router.cc.i
+.PHONY : router.cc.i
+
+router.s: router.cc.s
+.PHONY : router.s
+
+# target to generate assembly for a file
+router.cc.s:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/router.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/router.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/router.cc.s
+.PHONY : router.cc.s
+
 tcp_minnow_socket.o: tcp_minnow_socket.cc.o
 .PHONY : tcp_minnow_socket.o
 
@@ -432,6 +462,9 @@ help:
 	@echo "... reassembler.o"
 	@echo "... reassembler.i"
 	@echo "... reassembler.s"
+	@echo "... router.o"
+	@echo "... router.i"
+	@echo "... router.s"
 	@echo "... tcp_minnow_socket.o"
 	@echo "... tcp_minnow_socket.i"
 	@echo "... tcp_minnow_socket.s"

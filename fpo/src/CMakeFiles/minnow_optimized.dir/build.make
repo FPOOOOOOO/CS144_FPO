@@ -125,10 +125,24 @@ src/CMakeFiles/minnow_optimized.dir/reassembler.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minnow_optimized.dir/reassembler.cc.s"
 	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cs144/minnow/src/reassembler.cc -o CMakeFiles/minnow_optimized.dir/reassembler.cc.s
 
+src/CMakeFiles/minnow_optimized.dir/router.cc.o: src/CMakeFiles/minnow_optimized.dir/flags.make
+src/CMakeFiles/minnow_optimized.dir/router.cc.o: /home/cs144/minnow/src/router.cc
+src/CMakeFiles/minnow_optimized.dir/router.cc.o: src/CMakeFiles/minnow_optimized.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/minnow_optimized.dir/router.cc.o"
+	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/minnow_optimized.dir/router.cc.o -MF CMakeFiles/minnow_optimized.dir/router.cc.o.d -o CMakeFiles/minnow_optimized.dir/router.cc.o -c /home/cs144/minnow/src/router.cc
+
+src/CMakeFiles/minnow_optimized.dir/router.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/minnow_optimized.dir/router.cc.i"
+	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cs144/minnow/src/router.cc > CMakeFiles/minnow_optimized.dir/router.cc.i
+
+src/CMakeFiles/minnow_optimized.dir/router.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/minnow_optimized.dir/router.cc.s"
+	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cs144/minnow/src/router.cc -o CMakeFiles/minnow_optimized.dir/router.cc.s
+
 src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o: src/CMakeFiles/minnow_optimized.dir/flags.make
 src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o: /home/cs144/minnow/src/tcp_minnow_socket.cc
 src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o: src/CMakeFiles/minnow_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o"
 	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o -MF CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o.d -o CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o -c /home/cs144/minnow/src/tcp_minnow_socket.cc
 
 src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.i: cmake_force
@@ -142,7 +156,7 @@ src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.s: cmake_force
 src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o: src/CMakeFiles/minnow_optimized.dir/flags.make
 src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o: /home/cs144/minnow/src/tcp_receiver.cc
 src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o: src/CMakeFiles/minnow_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o"
 	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o -MF CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o.d -o CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o -c /home/cs144/minnow/src/tcp_receiver.cc
 
 src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.i: cmake_force
@@ -156,7 +170,7 @@ src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.s: cmake_force
 src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o: src/CMakeFiles/minnow_optimized.dir/flags.make
 src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o: /home/cs144/minnow/src/tcp_sender.cc
 src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o: src/CMakeFiles/minnow_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o"
 	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o -MF CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o.d -o CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o -c /home/cs144/minnow/src/tcp_sender.cc
 
 src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.i: cmake_force
@@ -170,7 +184,7 @@ src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.s: cmake_force
 src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o: src/CMakeFiles/minnow_optimized.dir/flags.make
 src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o: /home/cs144/minnow/src/wrapping_integers.cc
 src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o: src/CMakeFiles/minnow_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o"
 	cd /home/cs144/minnow/fpo/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o -MF CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o.d -o CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o -c /home/cs144/minnow/src/wrapping_integers.cc
 
 src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.i: cmake_force
@@ -187,6 +201,7 @@ minnow_optimized_OBJECTS = \
 "CMakeFiles/minnow_optimized.dir/byte_stream_helpers.cc.o" \
 "CMakeFiles/minnow_optimized.dir/network_interface.cc.o" \
 "CMakeFiles/minnow_optimized.dir/reassembler.cc.o" \
+"CMakeFiles/minnow_optimized.dir/router.cc.o" \
 "CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o" \
 "CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o" \
 "CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o" \
@@ -199,13 +214,14 @@ src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/byte_stream.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/byte_stream_helpers.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/network_interface.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/reassembler.cc.o
+src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/router.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/tcp_minnow_socket.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/tcp_receiver.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/tcp_sender.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/wrapping_integers.cc.o
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/build.make
 src/libminnow_optimized.a: src/CMakeFiles/minnow_optimized.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libminnow_optimized.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libminnow_optimized.a"
 	cd /home/cs144/minnow/fpo/src && $(CMAKE_COMMAND) -P CMakeFiles/minnow_optimized.dir/cmake_clean_target.cmake
 	cd /home/cs144/minnow/fpo/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/minnow_optimized.dir/link.txt --verbose=$(VERBOSE)
 

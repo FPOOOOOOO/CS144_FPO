@@ -1,3 +1,4 @@
+///home/cs144/minnow/src/router.hh
 #pragma once
 
 #include <memory>
@@ -34,5 +35,20 @@ public:
 
 private:
   // The router's collection of network interfaces
+  struct HJYRoute
+  {
+    uint32_t prefix;
+    uint8_t length;
+    std::optional<Address> next_hop;
+    size_t interface_index;
+
+    bool operator<(const HJYRoute& other) const{
+      return length > other.length;
+    }
+  };
+
+  std::vector<HJYRoute> routing_table_ {};
   std::vector<std::shared_ptr<NetworkInterface>> _interfaces {};
+
+  std::optional<HJYRoute> longest_prefix_match(uint32_t dst_ip);
 };

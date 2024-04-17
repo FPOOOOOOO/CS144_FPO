@@ -296,6 +296,32 @@ tidy_src__reassembler.hh/fast:
 .PHONY : tidy_src__reassembler.hh/fast
 
 #=============================================================================
+# Target rules for targets named tidy_src__router.cc
+
+# Build rule for target.
+tidy_src__router.cc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_src__router.cc
+.PHONY : tidy_src__router.cc
+
+# fast build rule for target.
+tidy_src__router.cc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__router.cc.dir/build.make CMakeFiles/tidy_src__router.cc.dir/build
+.PHONY : tidy_src__router.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_src__router.hh
+
+# Build rule for target.
+tidy_src__router.hh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_src__router.hh
+.PHONY : tidy_src__router.hh
+
+# fast build rule for target.
+tidy_src__router.hh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__router.hh.dir/build.make CMakeFiles/tidy_src__router.hh.dir/build
+.PHONY : tidy_src__router.hh/fast
+
+#=============================================================================
 # Target rules for targets named tidy_src__tcp_minnow_socket.cc
 
 # Build rule for target.
@@ -775,6 +801,19 @@ tidy_tests__recv_window.cc: cmake_check_build_system
 tidy_tests__recv_window.cc/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__recv_window.cc.dir/build.make CMakeFiles/tidy_tests__recv_window.cc.dir/build
 .PHONY : tidy_tests__recv_window.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_tests__router.cc
+
+# Build rule for target.
+tidy_tests__router.cc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_tests__router.cc
+.PHONY : tidy_tests__router.cc
+
+# fast build rule for target.
+tidy_tests__router.cc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__router.cc.dir/build.make CMakeFiles/tidy_tests__router.cc.dir/build
+.PHONY : tidy_tests__router.cc/fast
 
 #=============================================================================
 # Target rules for targets named tidy_tests__send_ack.cc
@@ -2935,6 +2974,32 @@ net_interface/fast:
 .PHONY : net_interface/fast
 
 #=============================================================================
+# Target rules for targets named router_sanitized
+
+# Build rule for target.
+router_sanitized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 router_sanitized
+.PHONY : router_sanitized
+
+# fast build rule for target.
+router_sanitized/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router_sanitized.dir/build.make tests/CMakeFiles/router_sanitized.dir/build
+.PHONY : router_sanitized/fast
+
+#=============================================================================
+# Target rules for targets named router
+
+# Build rule for target.
+router: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 router
+.PHONY : router
+
+# fast build rule for target.
+router/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/router.dir/build.make tests/CMakeFiles/router.dir/build
+.PHONY : router/fast
+
+#=============================================================================
 # Target rules for targets named byte_stream_speed_test
 
 # Build rule for target.
@@ -3074,6 +3139,8 @@ help:
 	@echo "... tidy_src__network_interface.hh"
 	@echo "... tidy_src__reassembler.cc"
 	@echo "... tidy_src__reassembler.hh"
+	@echo "... tidy_src__router.cc"
+	@echo "... tidy_src__router.hh"
 	@echo "... tidy_src__tcp_minnow_socket.cc"
 	@echo "... tidy_src__tcp_receiver.cc"
 	@echo "... tidy_src__tcp_receiver.hh"
@@ -3111,6 +3178,7 @@ help:
 	@echo "... tidy_tests__recv_special.cc"
 	@echo "... tidy_tests__recv_transmit.cc"
 	@echo "... tidy_tests__recv_window.cc"
+	@echo "... tidy_tests__router.cc"
 	@echo "... tidy_tests__send_ack.cc"
 	@echo "... tidy_tests__send_close.cc"
 	@echo "... tidy_tests__send_connect.cc"
@@ -3212,6 +3280,8 @@ help:
 	@echo "... recv_transmit_sanitized"
 	@echo "... recv_window"
 	@echo "... recv_window_sanitized"
+	@echo "... router"
+	@echo "... router_sanitized"
 	@echo "... send_ack"
 	@echo "... send_ack_sanitized"
 	@echo "... send_close"

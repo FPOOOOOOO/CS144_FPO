@@ -1,3 +1,4 @@
+///home/cs144/minnow/src/router.cc
 #include "router.hh"
 
 #include <iostream>
@@ -21,10 +22,49 @@ void Router::add_route( const uint32_t route_prefix,
        << " on interface " << interface_num << "\n";
 
   // Your code here.
+  HJYRoute new_route = {route_prefix, prefix_length, next_hop, interface_num};
+  routing_table_.push_back(new_route);
+  sort(routing_table_.begin(), routing_table_.end());
 }
 
 // Go through all the interfaces, and route every incoming datagram to its proper outgoing interface.
 void Router::route()
 {
   // Your code here.
+  // 遍历接口
+  for(auto& interf : _interfaces){
+    auto& incoming_dgram = interf->datagrams_received();
+    //遍历当前接口queue里的数据包
+    while(!incoming_dgram.empty()){
+      auto& dgram = incoming_dgram.front();
+      auto route = longest_prefix_match(dgram.header.dst);
+      if(!route || dgram.header.ttl <= 1){
+        incoming_dgram.pop();
+        continue;
+      }
+      dgram.header.ttl--;
+      dgram.header.compute_checksum();
+      interface(route->interface_index)->send_datagram(dgram, route->next_hop.has_value()?route->next_hop.value():Address::from_ipv4_numeric(dgram.header.dst));
+      incoming_dgram.pop();
+    }
+  }
 }
+
+uint32_t generate_mask(uint8_t length){
+  //return 0xFFFFFFFFu << (32 -length); //length = 0的时候会移动32位超限
+  return ~(0xFFFFFFFFu >> length);
+}
+
+std::optional<Router::HJYRoute> Router::longest_prefix_match(uint32_t dst_ip){
+  std::optional<Router::HJYRoute> best_route = std::nullopt;
+  for(const auto& route : routing_table_){
+    if((dst_ip & generate_mask(route.length)) == (route.prefix & generate_mask(route.length))){
+      if(!best_route || best_route->length < route.length){
+        best_route = route;
+      }
+    }
+  }
+
+  return best_route;
+}
+
