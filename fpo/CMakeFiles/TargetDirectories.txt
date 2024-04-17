@@ -7,6 +7,8 @@
 /home/cs144/minnow/fpo/CMakeFiles/tidy_src__byte_stream.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_src__byte_stream.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_src__byte_stream_helpers.cc.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_src__network_interface.cc.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_src__network_interface.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_src__reassembler.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_src__reassembler.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_src__tcp_minnow_socket.cc.dir
@@ -27,6 +29,8 @@
 /home/cs144/minnow/fpo/CMakeFiles/tidy_tests__common.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_tests__common.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_tests__conversions.hh.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_tests__net_interface.cc.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_tests__reassembler_cap.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_tests__reassembler_dup.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_tests__reassembler_holes.cc.dir
@@ -60,7 +64,12 @@
 /home/cs144/minnow/fpo/CMakeFiles/tidy_tests__wrapping_integers_wrap.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_util__address.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_util__address.hh.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_util__arp_message.cc.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_util__arp_message.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_util__checksum.hh.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_util__ethernet_frame.hh.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_util__ethernet_header.cc.dir
+/home/cs144/minnow/fpo/CMakeFiles/tidy_util__ethernet_header.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_util__eventloop.cc.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_util__eventloop.hh.dir
 /home/cs144/minnow/fpo/CMakeFiles/tidy_util__exception.hh.dir
@@ -126,8 +135,8 @@
 /home/cs144/minnow/fpo/CMakeFiles/check1.dir
 /home/cs144/minnow/fpo/CMakeFiles/check2.dir
 /home/cs144/minnow/fpo/CMakeFiles/check3.dir
-/home/cs144/minnow/fpo/CMakeFiles/check4.dir
 /home/cs144/minnow/fpo/CMakeFiles/check5.dir
+/home/cs144/minnow/fpo/CMakeFiles/check6.dir
 /home/cs144/minnow/fpo/CMakeFiles/speed.dir
 /home/cs144/minnow/fpo/CMakeFiles/test.dir
 /home/cs144/minnow/fpo/CMakeFiles/edit_cache.dir
@@ -212,6 +221,8 @@
 /home/cs144/minnow/fpo/tests/CMakeFiles/send_close.dir
 /home/cs144/minnow/fpo/tests/CMakeFiles/send_extra_sanitized.dir
 /home/cs144/minnow/fpo/tests/CMakeFiles/send_extra.dir
+/home/cs144/minnow/fpo/tests/CMakeFiles/net_interface_sanitized.dir
+/home/cs144/minnow/fpo/tests/CMakeFiles/net_interface.dir
 /home/cs144/minnow/fpo/tests/CMakeFiles/byte_stream_speed_test.dir
 /home/cs144/minnow/fpo/tests/CMakeFiles/reassembler_speed_test.dir
 /home/cs144/minnow/fpo/tests/CMakeFiles/test.dir

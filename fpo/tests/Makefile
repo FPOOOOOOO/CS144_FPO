@@ -1079,6 +1079,34 @@ send_extra/fast:
 .PHONY : send_extra/fast
 
 # Convenience name for target.
+tests/CMakeFiles/net_interface_sanitized.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/net_interface_sanitized.dir/rule
+.PHONY : tests/CMakeFiles/net_interface_sanitized.dir/rule
+
+# Convenience name for target.
+net_interface_sanitized: tests/CMakeFiles/net_interface_sanitized.dir/rule
+.PHONY : net_interface_sanitized
+
+# fast build rule for target.
+net_interface_sanitized/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/build
+.PHONY : net_interface_sanitized/fast
+
+# Convenience name for target.
+tests/CMakeFiles/net_interface.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/net_interface.dir/rule
+.PHONY : tests/CMakeFiles/net_interface.dir/rule
+
+# Convenience name for target.
+net_interface: tests/CMakeFiles/net_interface.dir/rule
+.PHONY : net_interface
+
+# fast build rule for target.
+net_interface/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/build
+.PHONY : net_interface/fast
+
+# Convenience name for target.
 tests/CMakeFiles/byte_stream_speed_test.dir/rule:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_speed_test.dir/rule
 .PHONY : tests/CMakeFiles/byte_stream_speed_test.dir/rule
@@ -1318,6 +1346,33 @@ common.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/minnow_testing_debug.dir/build.make tests/CMakeFiles/minnow_testing_debug.dir/common.cc.s
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/minnow_testing_sanitized.dir/build.make tests/CMakeFiles/minnow_testing_sanitized.dir/common.cc.s
 .PHONY : common.cc.s
+
+net_interface.o: net_interface.cc.o
+.PHONY : net_interface.o
+
+# target to build an object file
+net_interface.cc.o:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/net_interface.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/net_interface.cc.o
+.PHONY : net_interface.cc.o
+
+net_interface.i: net_interface.cc.i
+.PHONY : net_interface.i
+
+# target to preprocess a source file
+net_interface.cc.i:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/net_interface.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/net_interface.cc.i
+.PHONY : net_interface.cc.i
+
+net_interface.s: net_interface.cc.s
+.PHONY : net_interface.s
+
+# target to generate assembly for a file
+net_interface.cc.s:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/net_interface.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/net_interface.cc.s
+.PHONY : net_interface.cc.s
 
 reassembler_cap.o: reassembler_cap.cc.o
 .PHONY : reassembler_cap.o
@@ -2071,6 +2126,8 @@ help:
 	@echo "... byte_stream_two_writes_sanitized"
 	@echo "... minnow_testing_debug"
 	@echo "... minnow_testing_sanitized"
+	@echo "... net_interface"
+	@echo "... net_interface_sanitized"
 	@echo "... reassembler_cap"
 	@echo "... reassembler_cap_sanitized"
 	@echo "... reassembler_dup"
@@ -2148,6 +2205,9 @@ help:
 	@echo "... common.o"
 	@echo "... common.i"
 	@echo "... common.s"
+	@echo "... net_interface.o"
+	@echo "... net_interface.i"
+	@echo "... net_interface.s"
 	@echo "... reassembler_cap.o"
 	@echo "... reassembler_cap.i"
 	@echo "... reassembler_cap.s"

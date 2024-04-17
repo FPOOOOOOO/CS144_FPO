@@ -228,6 +228,36 @@ byte_stream_helpers.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/byte_stream_helpers.cc.s
 .PHONY : byte_stream_helpers.cc.s
 
+network_interface.o: network_interface.cc.o
+.PHONY : network_interface.o
+
+# target to build an object file
+network_interface.cc.o:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/network_interface.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/network_interface.cc.o
+.PHONY : network_interface.cc.o
+
+network_interface.i: network_interface.cc.i
+.PHONY : network_interface.i
+
+# target to preprocess a source file
+network_interface.cc.i:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/network_interface.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/network_interface.cc.i
+.PHONY : network_interface.cc.i
+
+network_interface.s: network_interface.cc.s
+.PHONY : network_interface.s
+
+# target to generate assembly for a file
+network_interface.cc.s:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/network_interface.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/network_interface.cc.s
+.PHONY : network_interface.cc.s
+
 reassembler.o: reassembler.cc.o
 .PHONY : reassembler.o
 
@@ -396,6 +426,9 @@ help:
 	@echo "... byte_stream_helpers.o"
 	@echo "... byte_stream_helpers.i"
 	@echo "... byte_stream_helpers.s"
+	@echo "... network_interface.o"
+	@echo "... network_interface.i"
+	@echo "... network_interface.s"
 	@echo "... reassembler.o"
 	@echo "... reassembler.i"
 	@echo "... reassembler.s"

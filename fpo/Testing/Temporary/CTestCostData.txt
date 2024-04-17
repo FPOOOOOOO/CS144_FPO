@@ -1,5 +1,5 @@
 compile 0 0
-t_webget 5 0.29477
+t_webget 7 0.432704
 compile 0 0
 compile 0 0
 byte_stream_basics 53 0.000404543
@@ -153,5 +153,11 @@ compile 0 0
 compile 0 0
 compile 0 0
 compile 0 0
-compile with bug-checkers 1 4.9769
+compile 0 0
+compile 0 0
+compile 0 0
+compile 0 0
+net_interface 1 0.0446167
+compile 0 0
+compile with bug-checkers 1 14.7128
 ---

@@ -83,10 +83,38 @@ util/CMakeFiles/util_optimized.dir/address.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/util_optimized.dir/address.cc.s"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cs144/minnow/util/address.cc -o CMakeFiles/util_optimized.dir/address.cc.s
 
+util/CMakeFiles/util_optimized.dir/arp_message.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
+util/CMakeFiles/util_optimized.dir/arp_message.cc.o: /home/cs144/minnow/util/arp_message.cc
+util/CMakeFiles/util_optimized.dir/arp_message.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object util/CMakeFiles/util_optimized.dir/arp_message.cc.o"
+	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/arp_message.cc.o -MF CMakeFiles/util_optimized.dir/arp_message.cc.o.d -o CMakeFiles/util_optimized.dir/arp_message.cc.o -c /home/cs144/minnow/util/arp_message.cc
+
+util/CMakeFiles/util_optimized.dir/arp_message.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/util_optimized.dir/arp_message.cc.i"
+	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cs144/minnow/util/arp_message.cc > CMakeFiles/util_optimized.dir/arp_message.cc.i
+
+util/CMakeFiles/util_optimized.dir/arp_message.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/util_optimized.dir/arp_message.cc.s"
+	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cs144/minnow/util/arp_message.cc -o CMakeFiles/util_optimized.dir/arp_message.cc.s
+
+util/CMakeFiles/util_optimized.dir/ethernet_header.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
+util/CMakeFiles/util_optimized.dir/ethernet_header.cc.o: /home/cs144/minnow/util/ethernet_header.cc
+util/CMakeFiles/util_optimized.dir/ethernet_header.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object util/CMakeFiles/util_optimized.dir/ethernet_header.cc.o"
+	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/ethernet_header.cc.o -MF CMakeFiles/util_optimized.dir/ethernet_header.cc.o.d -o CMakeFiles/util_optimized.dir/ethernet_header.cc.o -c /home/cs144/minnow/util/ethernet_header.cc
+
+util/CMakeFiles/util_optimized.dir/ethernet_header.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/util_optimized.dir/ethernet_header.cc.i"
+	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cs144/minnow/util/ethernet_header.cc > CMakeFiles/util_optimized.dir/ethernet_header.cc.i
+
+util/CMakeFiles/util_optimized.dir/ethernet_header.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/util_optimized.dir/ethernet_header.cc.s"
+	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cs144/minnow/util/ethernet_header.cc -o CMakeFiles/util_optimized.dir/ethernet_header.cc.s
+
 util/CMakeFiles/util_optimized.dir/eventloop.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/eventloop.cc.o: /home/cs144/minnow/util/eventloop.cc
 util/CMakeFiles/util_optimized.dir/eventloop.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object util/CMakeFiles/util_optimized.dir/eventloop.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object util/CMakeFiles/util_optimized.dir/eventloop.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/eventloop.cc.o -MF CMakeFiles/util_optimized.dir/eventloop.cc.o.d -o CMakeFiles/util_optimized.dir/eventloop.cc.o -c /home/cs144/minnow/util/eventloop.cc
 
 util/CMakeFiles/util_optimized.dir/eventloop.cc.i: cmake_force
@@ -100,7 +128,7 @@ util/CMakeFiles/util_optimized.dir/eventloop.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o: /home/cs144/minnow/util/file_descriptor.cc
 util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o -MF CMakeFiles/util_optimized.dir/file_descriptor.cc.o.d -o CMakeFiles/util_optimized.dir/file_descriptor.cc.o -c /home/cs144/minnow/util/file_descriptor.cc
 
 util/CMakeFiles/util_optimized.dir/file_descriptor.cc.i: cmake_force
@@ -114,7 +142,7 @@ util/CMakeFiles/util_optimized.dir/file_descriptor.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o: /home/cs144/minnow/util/ipv4_header.cc
 util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o -MF CMakeFiles/util_optimized.dir/ipv4_header.cc.o.d -o CMakeFiles/util_optimized.dir/ipv4_header.cc.o -c /home/cs144/minnow/util/ipv4_header.cc
 
 util/CMakeFiles/util_optimized.dir/ipv4_header.cc.i: cmake_force
@@ -128,7 +156,7 @@ util/CMakeFiles/util_optimized.dir/ipv4_header.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/random.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/random.cc.o: /home/cs144/minnow/util/random.cc
 util/CMakeFiles/util_optimized.dir/random.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object util/CMakeFiles/util_optimized.dir/random.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object util/CMakeFiles/util_optimized.dir/random.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/random.cc.o -MF CMakeFiles/util_optimized.dir/random.cc.o.d -o CMakeFiles/util_optimized.dir/random.cc.o -c /home/cs144/minnow/util/random.cc
 
 util/CMakeFiles/util_optimized.dir/random.cc.i: cmake_force
@@ -142,7 +170,7 @@ util/CMakeFiles/util_optimized.dir/random.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/socket.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/socket.cc.o: /home/cs144/minnow/util/socket.cc
 util/CMakeFiles/util_optimized.dir/socket.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object util/CMakeFiles/util_optimized.dir/socket.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object util/CMakeFiles/util_optimized.dir/socket.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/socket.cc.o -MF CMakeFiles/util_optimized.dir/socket.cc.o.d -o CMakeFiles/util_optimized.dir/socket.cc.o -c /home/cs144/minnow/util/socket.cc
 
 util/CMakeFiles/util_optimized.dir/socket.cc.i: cmake_force
@@ -156,7 +184,7 @@ util/CMakeFiles/util_optimized.dir/socket.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o: /home/cs144/minnow/util/tcp_over_ip.cc
 util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o -MF CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o.d -o CMakeFiles/util_optimized.dir/tcp_over_ip.cc.o -c /home/cs144/minnow/util/tcp_over_ip.cc
 
 util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.i: cmake_force
@@ -170,7 +198,7 @@ util/CMakeFiles/util_optimized.dir/tcp_over_ip.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/tcp_segment.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/tcp_segment.cc.o: /home/cs144/minnow/util/tcp_segment.cc
 util/CMakeFiles/util_optimized.dir/tcp_segment.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object util/CMakeFiles/util_optimized.dir/tcp_segment.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object util/CMakeFiles/util_optimized.dir/tcp_segment.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/tcp_segment.cc.o -MF CMakeFiles/util_optimized.dir/tcp_segment.cc.o.d -o CMakeFiles/util_optimized.dir/tcp_segment.cc.o -c /home/cs144/minnow/util/tcp_segment.cc
 
 util/CMakeFiles/util_optimized.dir/tcp_segment.cc.i: cmake_force
@@ -184,7 +212,7 @@ util/CMakeFiles/util_optimized.dir/tcp_segment.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/tun.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/tun.cc.o: /home/cs144/minnow/util/tun.cc
 util/CMakeFiles/util_optimized.dir/tun.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object util/CMakeFiles/util_optimized.dir/tun.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object util/CMakeFiles/util_optimized.dir/tun.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/tun.cc.o -MF CMakeFiles/util_optimized.dir/tun.cc.o.d -o CMakeFiles/util_optimized.dir/tun.cc.o -c /home/cs144/minnow/util/tun.cc
 
 util/CMakeFiles/util_optimized.dir/tun.cc.i: cmake_force
@@ -198,7 +226,7 @@ util/CMakeFiles/util_optimized.dir/tun.cc.s: cmake_force
 util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o: util/CMakeFiles/util_optimized.dir/flags.make
 util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o: /home/cs144/minnow/util/tuntap_adapter.cc
 util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o: util/CMakeFiles/util_optimized.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o"
 	cd /home/cs144/minnow/fpo/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o -MF CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o.d -o CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o -c /home/cs144/minnow/util/tuntap_adapter.cc
 
 util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.i: cmake_force
@@ -212,6 +240,8 @@ util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.s: cmake_force
 # Object files for target util_optimized
 util_optimized_OBJECTS = \
 "CMakeFiles/util_optimized.dir/address.cc.o" \
+"CMakeFiles/util_optimized.dir/arp_message.cc.o" \
+"CMakeFiles/util_optimized.dir/ethernet_header.cc.o" \
 "CMakeFiles/util_optimized.dir/eventloop.cc.o" \
 "CMakeFiles/util_optimized.dir/file_descriptor.cc.o" \
 "CMakeFiles/util_optimized.dir/ipv4_header.cc.o" \
@@ -226,6 +256,8 @@ util_optimized_OBJECTS = \
 util_optimized_EXTERNAL_OBJECTS =
 
 util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/address.cc.o
+util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/arp_message.cc.o
+util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/ethernet_header.cc.o
 util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/eventloop.cc.o
 util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/file_descriptor.cc.o
 util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/ipv4_header.cc.o
@@ -237,7 +269,7 @@ util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/tun.cc.o
 util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/tuntap_adapter.cc.o
 util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/build.make
 util/libutil_optimized.a: util/CMakeFiles/util_optimized.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libutil_optimized.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libutil_optimized.a"
 	cd /home/cs144/minnow/fpo/util && $(CMAKE_COMMAND) -P CMakeFiles/util_optimized.dir/cmake_clean_target.cmake
 	cd /home/cs144/minnow/fpo/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/util_optimized.dir/link.txt --verbose=$(VERBOSE)
 

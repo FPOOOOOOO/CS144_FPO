@@ -244,6 +244,32 @@ tidy_src__byte_stream_helpers.cc/fast:
 .PHONY : tidy_src__byte_stream_helpers.cc/fast
 
 #=============================================================================
+# Target rules for targets named tidy_src__network_interface.cc
+
+# Build rule for target.
+tidy_src__network_interface.cc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_src__network_interface.cc
+.PHONY : tidy_src__network_interface.cc
+
+# fast build rule for target.
+tidy_src__network_interface.cc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.cc.dir/build.make CMakeFiles/tidy_src__network_interface.cc.dir/build
+.PHONY : tidy_src__network_interface.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_src__network_interface.hh
+
+# Build rule for target.
+tidy_src__network_interface.hh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_src__network_interface.hh
+.PHONY : tidy_src__network_interface.hh
+
+# fast build rule for target.
+tidy_src__network_interface.hh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.hh.dir/build.make CMakeFiles/tidy_src__network_interface.hh.dir/build
+.PHONY : tidy_src__network_interface.hh/fast
+
+#=============================================================================
 # Target rules for targets named tidy_src__reassembler.cc
 
 # Build rule for target.
@@ -502,6 +528,32 @@ tidy_tests__conversions.hh: cmake_check_build_system
 tidy_tests__conversions.hh/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__conversions.hh.dir/build.make CMakeFiles/tidy_tests__conversions.hh.dir/build
 .PHONY : tidy_tests__conversions.hh/fast
+
+#=============================================================================
+# Target rules for targets named tidy_tests__net_interface.cc
+
+# Build rule for target.
+tidy_tests__net_interface.cc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_tests__net_interface.cc
+.PHONY : tidy_tests__net_interface.cc
+
+# fast build rule for target.
+tidy_tests__net_interface.cc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__net_interface.cc.dir/build.make CMakeFiles/tidy_tests__net_interface.cc.dir/build
+.PHONY : tidy_tests__net_interface.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_tests__network_interface_test_harness.hh
+
+# Build rule for target.
+tidy_tests__network_interface_test_harness.hh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_tests__network_interface_test_harness.hh
+.PHONY : tidy_tests__network_interface_test_harness.hh
+
+# fast build rule for target.
+tidy_tests__network_interface_test_harness.hh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/build.make CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/build
+.PHONY : tidy_tests__network_interface_test_harness.hh/fast
 
 #=============================================================================
 # Target rules for targets named tidy_tests__reassembler_cap.cc
@@ -933,6 +985,32 @@ tidy_util__address.hh/fast:
 .PHONY : tidy_util__address.hh/fast
 
 #=============================================================================
+# Target rules for targets named tidy_util__arp_message.cc
+
+# Build rule for target.
+tidy_util__arp_message.cc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_util__arp_message.cc
+.PHONY : tidy_util__arp_message.cc
+
+# fast build rule for target.
+tidy_util__arp_message.cc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.cc.dir/build.make CMakeFiles/tidy_util__arp_message.cc.dir/build
+.PHONY : tidy_util__arp_message.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_util__arp_message.hh
+
+# Build rule for target.
+tidy_util__arp_message.hh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_util__arp_message.hh
+.PHONY : tidy_util__arp_message.hh
+
+# fast build rule for target.
+tidy_util__arp_message.hh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.hh.dir/build.make CMakeFiles/tidy_util__arp_message.hh.dir/build
+.PHONY : tidy_util__arp_message.hh/fast
+
+#=============================================================================
 # Target rules for targets named tidy_util__checksum.hh
 
 # Build rule for target.
@@ -944,6 +1022,45 @@ tidy_util__checksum.hh: cmake_check_build_system
 tidy_util__checksum.hh/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__checksum.hh.dir/build.make CMakeFiles/tidy_util__checksum.hh.dir/build
 .PHONY : tidy_util__checksum.hh/fast
+
+#=============================================================================
+# Target rules for targets named tidy_util__ethernet_frame.hh
+
+# Build rule for target.
+tidy_util__ethernet_frame.hh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_util__ethernet_frame.hh
+.PHONY : tidy_util__ethernet_frame.hh
+
+# fast build rule for target.
+tidy_util__ethernet_frame.hh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_frame.hh.dir/build.make CMakeFiles/tidy_util__ethernet_frame.hh.dir/build
+.PHONY : tidy_util__ethernet_frame.hh/fast
+
+#=============================================================================
+# Target rules for targets named tidy_util__ethernet_header.cc
+
+# Build rule for target.
+tidy_util__ethernet_header.cc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_util__ethernet_header.cc
+.PHONY : tidy_util__ethernet_header.cc
+
+# fast build rule for target.
+tidy_util__ethernet_header.cc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.cc.dir/build.make CMakeFiles/tidy_util__ethernet_header.cc.dir/build
+.PHONY : tidy_util__ethernet_header.cc/fast
+
+#=============================================================================
+# Target rules for targets named tidy_util__ethernet_header.hh
+
+# Build rule for target.
+tidy_util__ethernet_header.hh: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_util__ethernet_header.hh
+.PHONY : tidy_util__ethernet_header.hh
+
+# fast build rule for target.
+tidy_util__ethernet_header.hh/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.hh.dir/build.make CMakeFiles/tidy_util__ethernet_header.hh.dir/build
+.PHONY : tidy_util__ethernet_header.hh/fast
 
 #=============================================================================
 # Target rules for targets named tidy_util__eventloop.cc
@@ -1791,19 +1908,6 @@ check3/fast:
 .PHONY : check3/fast
 
 #=============================================================================
-# Target rules for targets named check4
-
-# Build rule for target.
-check4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check4
-.PHONY : check4
-
-# fast build rule for target.
-check4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check4.dir/build.make CMakeFiles/check4.dir/build
-.PHONY : check4/fast
-
-#=============================================================================
 # Target rules for targets named check5
 
 # Build rule for target.
@@ -1815,6 +1919,19 @@ check5: cmake_check_build_system
 check5/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check5.dir/build.make CMakeFiles/check5.dir/build
 .PHONY : check5/fast
+
+#=============================================================================
+# Target rules for targets named check6
+
+# Build rule for target.
+check6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check6
+.PHONY : check6
+
+# fast build rule for target.
+check6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/check6.dir/build.make CMakeFiles/check6.dir/build
+.PHONY : check6/fast
 
 #=============================================================================
 # Target rules for targets named speed
@@ -2792,6 +2909,32 @@ send_extra/fast:
 .PHONY : send_extra/fast
 
 #=============================================================================
+# Target rules for targets named net_interface_sanitized
+
+# Build rule for target.
+net_interface_sanitized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 net_interface_sanitized
+.PHONY : net_interface_sanitized
+
+# fast build rule for target.
+net_interface_sanitized/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/build
+.PHONY : net_interface_sanitized/fast
+
+#=============================================================================
+# Target rules for targets named net_interface
+
+# Build rule for target.
+net_interface: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 net_interface
+.PHONY : net_interface
+
+# fast build rule for target.
+net_interface/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/build
+.PHONY : net_interface/fast
+
+#=============================================================================
 # Target rules for targets named byte_stream_speed_test
 
 # Build rule for target.
@@ -2910,8 +3053,8 @@ help:
 	@echo "... check1"
 	@echo "... check2"
 	@echo "... check3"
-	@echo "... check4"
 	@echo "... check5"
+	@echo "... check6"
 	@echo "... check_webget"
 	@echo "... format"
 	@echo "... functionality_testing"
@@ -2927,6 +3070,8 @@ help:
 	@echo "... tidy_src__byte_stream.cc"
 	@echo "... tidy_src__byte_stream.hh"
 	@echo "... tidy_src__byte_stream_helpers.cc"
+	@echo "... tidy_src__network_interface.cc"
+	@echo "... tidy_src__network_interface.hh"
 	@echo "... tidy_src__reassembler.cc"
 	@echo "... tidy_src__reassembler.hh"
 	@echo "... tidy_src__tcp_minnow_socket.cc"
@@ -2947,6 +3092,8 @@ help:
 	@echo "... tidy_tests__common.cc"
 	@echo "... tidy_tests__common.hh"
 	@echo "... tidy_tests__conversions.hh"
+	@echo "... tidy_tests__net_interface.cc"
+	@echo "... tidy_tests__network_interface_test_harness.hh"
 	@echo "... tidy_tests__reassembler_cap.cc"
 	@echo "... tidy_tests__reassembler_dup.cc"
 	@echo "... tidy_tests__reassembler_holes.cc"
@@ -2980,7 +3127,12 @@ help:
 	@echo "... tidy_tests__wrapping_integers_wrap.cc"
 	@echo "... tidy_util__address.cc"
 	@echo "... tidy_util__address.hh"
+	@echo "... tidy_util__arp_message.cc"
+	@echo "... tidy_util__arp_message.hh"
 	@echo "... tidy_util__checksum.hh"
+	@echo "... tidy_util__ethernet_frame.hh"
+	@echo "... tidy_util__ethernet_header.cc"
+	@echo "... tidy_util__ethernet_header.hh"
 	@echo "... tidy_util__eventloop.cc"
 	@echo "... tidy_util__eventloop.hh"
 	@echo "... tidy_util__exception.hh"
@@ -3029,6 +3181,8 @@ help:
 	@echo "... minnow_sanitized"
 	@echo "... minnow_testing_debug"
 	@echo "... minnow_testing_sanitized"
+	@echo "... net_interface"
+	@echo "... net_interface_sanitized"
 	@echo "... reassembler_cap"
 	@echo "... reassembler_cap_sanitized"
 	@echo "... reassembler_dup"

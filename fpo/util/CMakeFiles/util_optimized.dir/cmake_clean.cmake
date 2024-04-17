@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/util_optimized.dir/address.cc.o"
   "CMakeFiles/util_optimized.dir/address.cc.o.d"
+  "CMakeFiles/util_optimized.dir/arp_message.cc.o"
+  "CMakeFiles/util_optimized.dir/arp_message.cc.o.d"
+  "CMakeFiles/util_optimized.dir/ethernet_header.cc.o"
+  "CMakeFiles/util_optimized.dir/ethernet_header.cc.o.d"
   "CMakeFiles/util_optimized.dir/eventloop.cc.o"
   "CMakeFiles/util_optimized.dir/eventloop.cc.o.d"
   "CMakeFiles/util_optimized.dir/file_descriptor.cc.o"

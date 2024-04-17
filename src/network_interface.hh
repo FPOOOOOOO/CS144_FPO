@@ -1,10 +1,15 @@
+///home/cs144/minnow/src/network_interface.hh
 #pragma once
 
+#include <compare>
+#include <optional>
 #include <queue>
+#include <unordered_map>
 
 #include "address.hh"
 #include "ethernet_frame.hh"
 #include "ipv4_datagram.hh"
+#include "arp_message.hh" // 注意这里的头文件依赖关系被我修改过
 
 // A "network interface" that connects IP (the internet layer, or network layer)
 // with Ethernet (the network access layer, or link layer).
@@ -65,7 +70,7 @@ public:
   OutputPort& output() { return *port_; }
   std::queue<InternetDatagram>& datagrams_received() { return datagrams_received_; }
 
-private:
+private:  
   // Human-readable name of the interface
   std::string name_;
 
@@ -81,4 +86,16 @@ private:
 
   // Datagrams that have been received
   std::queue<InternetDatagram> datagrams_received_ {};
+
+  std::unordered_map<uint32_t,EthernetAddress> ARP_table_ {};
+
+  std::unordered_map<uint32_t,uint64_t> ARP_timing_ {};         //<IP,timer_> 5s
+  std::unordered_map<uint32_t,uint64_t> ARP_table_timing_ {};   //<IP,timer > 30s
+  uint64_t timer_ {};  //tick counter
+
+  EthernetFrame make_eth_frame(uint16_t protocol, std::vector<std::string> payload, EthernetAddress dst_mac);
+  ARPMessage make_arp_frame(uint16_t opcode, uint32_t dst_ip, EthernetAddress dst_mac);
+
+  std::unordered_multimap<uint32_t, InternetDatagram> dgram_pending_ {};
+
 };

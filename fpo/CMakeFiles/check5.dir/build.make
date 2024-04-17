@@ -67,7 +67,7 @@ include CMakeFiles/check5.dir/compiler_depend.make
 include CMakeFiles/check5.dir/progress.make
 
 CMakeFiles/check5:
-	/usr/bin/ctest --output-on-failure --stop-on-failure --timeout 12 -R '^net_interface|^router'
+	/usr/bin/ctest --output-on-failure --stop-on-failure --timeout 12 -R '^net_interface'
 
 check5: CMakeFiles/check5
 check5: CMakeFiles/check5.dir/build.make

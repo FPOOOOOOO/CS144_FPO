@@ -86,6 +86,8 @@ clean: CMakeFiles/tidy_apps__webget.cc.dir/clean
 clean: CMakeFiles/tidy_src__byte_stream.cc.dir/clean
 clean: CMakeFiles/tidy_src__byte_stream.hh.dir/clean
 clean: CMakeFiles/tidy_src__byte_stream_helpers.cc.dir/clean
+clean: CMakeFiles/tidy_src__network_interface.cc.dir/clean
+clean: CMakeFiles/tidy_src__network_interface.hh.dir/clean
 clean: CMakeFiles/tidy_src__reassembler.cc.dir/clean
 clean: CMakeFiles/tidy_src__reassembler.hh.dir/clean
 clean: CMakeFiles/tidy_src__tcp_minnow_socket.cc.dir/clean
@@ -106,6 +108,8 @@ clean: CMakeFiles/tidy_tests__byte_stream_two_writes.cc.dir/clean
 clean: CMakeFiles/tidy_tests__common.cc.dir/clean
 clean: CMakeFiles/tidy_tests__common.hh.dir/clean
 clean: CMakeFiles/tidy_tests__conversions.hh.dir/clean
+clean: CMakeFiles/tidy_tests__net_interface.cc.dir/clean
+clean: CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/clean
 clean: CMakeFiles/tidy_tests__reassembler_cap.cc.dir/clean
 clean: CMakeFiles/tidy_tests__reassembler_dup.cc.dir/clean
 clean: CMakeFiles/tidy_tests__reassembler_holes.cc.dir/clean
@@ -139,7 +143,12 @@ clean: CMakeFiles/tidy_tests__wrapping_integers_unwrap.cc.dir/clean
 clean: CMakeFiles/tidy_tests__wrapping_integers_wrap.cc.dir/clean
 clean: CMakeFiles/tidy_util__address.cc.dir/clean
 clean: CMakeFiles/tidy_util__address.hh.dir/clean
+clean: CMakeFiles/tidy_util__arp_message.cc.dir/clean
+clean: CMakeFiles/tidy_util__arp_message.hh.dir/clean
 clean: CMakeFiles/tidy_util__checksum.hh.dir/clean
+clean: CMakeFiles/tidy_util__ethernet_frame.hh.dir/clean
+clean: CMakeFiles/tidy_util__ethernet_header.cc.dir/clean
+clean: CMakeFiles/tidy_util__ethernet_header.hh.dir/clean
 clean: CMakeFiles/tidy_util__eventloop.cc.dir/clean
 clean: CMakeFiles/tidy_util__eventloop.hh.dir/clean
 clean: CMakeFiles/tidy_util__exception.hh.dir/clean
@@ -205,8 +214,8 @@ clean: CMakeFiles/check_webget.dir/clean
 clean: CMakeFiles/check1.dir/clean
 clean: CMakeFiles/check2.dir/clean
 clean: CMakeFiles/check3.dir/clean
-clean: CMakeFiles/check4.dir/clean
 clean: CMakeFiles/check5.dir/clean
+clean: CMakeFiles/check6.dir/clean
 clean: CMakeFiles/speed.dir/clean
 clean: util/clean
 clean: src/clean
@@ -332,6 +341,8 @@ tests/clean: tests/CMakeFiles/send_close_sanitized.dir/clean
 tests/clean: tests/CMakeFiles/send_close.dir/clean
 tests/clean: tests/CMakeFiles/send_extra_sanitized.dir/clean
 tests/clean: tests/CMakeFiles/send_extra.dir/clean
+tests/clean: tests/CMakeFiles/net_interface_sanitized.dir/clean
+tests/clean: tests/CMakeFiles/net_interface.dir/clean
 tests/clean: tests/CMakeFiles/byte_stream_speed_test.dir/clean
 tests/clean: tests/CMakeFiles/reassembler_speed_test.dir/clean
 .PHONY : tests/clean
@@ -360,12 +371,12 @@ util/clean: util/CMakeFiles/util_optimized.dir/clean
 CMakeFiles/format.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=13 "Built target format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target format"
 .PHONY : CMakeFiles/format.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/format.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : CMakeFiles/format.dir/rule
@@ -586,6 +597,58 @@ tidy_src__byte_stream_helpers.cc: CMakeFiles/tidy_src__byte_stream_helpers.cc.di
 CMakeFiles/tidy_src__byte_stream_helpers.cc.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__byte_stream_helpers.cc.dir/build.make CMakeFiles/tidy_src__byte_stream_helpers.cc.dir/clean
 .PHONY : CMakeFiles/tidy_src__byte_stream_helpers.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_src__network_interface.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_src__network_interface.cc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.cc.dir/build.make CMakeFiles/tidy_src__network_interface.cc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.cc.dir/build.make CMakeFiles/tidy_src__network_interface.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_src__network_interface.cc"
+.PHONY : CMakeFiles/tidy_src__network_interface.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_src__network_interface.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_src__network_interface.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_src__network_interface.cc.dir/rule
+
+# Convenience name for target.
+tidy_src__network_interface.cc: CMakeFiles/tidy_src__network_interface.cc.dir/rule
+.PHONY : tidy_src__network_interface.cc
+
+# clean rule for target.
+CMakeFiles/tidy_src__network_interface.cc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.cc.dir/build.make CMakeFiles/tidy_src__network_interface.cc.dir/clean
+.PHONY : CMakeFiles/tidy_src__network_interface.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_src__network_interface.hh.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_src__network_interface.hh.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.hh.dir/build.make CMakeFiles/tidy_src__network_interface.hh.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.hh.dir/build.make CMakeFiles/tidy_src__network_interface.hh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_src__network_interface.hh"
+.PHONY : CMakeFiles/tidy_src__network_interface.hh.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_src__network_interface.hh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_src__network_interface.hh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_src__network_interface.hh.dir/rule
+
+# Convenience name for target.
+tidy_src__network_interface.hh: CMakeFiles/tidy_src__network_interface.hh.dir/rule
+.PHONY : tidy_src__network_interface.hh
+
+# clean rule for target.
+CMakeFiles/tidy_src__network_interface.hh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_src__network_interface.hh.dir/build.make CMakeFiles/tidy_src__network_interface.hh.dir/clean
+.PHONY : CMakeFiles/tidy_src__network_interface.hh.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_src__reassembler.cc.dir
@@ -1106,6 +1169,58 @@ tidy_tests__conversions.hh: CMakeFiles/tidy_tests__conversions.hh.dir/rule
 CMakeFiles/tidy_tests__conversions.hh.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__conversions.hh.dir/build.make CMakeFiles/tidy_tests__conversions.hh.dir/clean
 .PHONY : CMakeFiles/tidy_tests__conversions.hh.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_tests__net_interface.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_tests__net_interface.cc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__net_interface.cc.dir/build.make CMakeFiles/tidy_tests__net_interface.cc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__net_interface.cc.dir/build.make CMakeFiles/tidy_tests__net_interface.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_tests__net_interface.cc"
+.PHONY : CMakeFiles/tidy_tests__net_interface.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_tests__net_interface.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__net_interface.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_tests__net_interface.cc.dir/rule
+
+# Convenience name for target.
+tidy_tests__net_interface.cc: CMakeFiles/tidy_tests__net_interface.cc.dir/rule
+.PHONY : tidy_tests__net_interface.cc
+
+# clean rule for target.
+CMakeFiles/tidy_tests__net_interface.cc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__net_interface.cc.dir/build.make CMakeFiles/tidy_tests__net_interface.cc.dir/clean
+.PHONY : CMakeFiles/tidy_tests__net_interface.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/build.make CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/build.make CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_tests__network_interface_test_harness.hh"
+.PHONY : CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/rule
+
+# Convenience name for target.
+tidy_tests__network_interface_test_harness.hh: CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/rule
+.PHONY : tidy_tests__network_interface_test_harness.hh
+
+# clean rule for target.
+CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/build.make CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/clean
+.PHONY : CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_tests__reassembler_cap.cc.dir
@@ -1966,6 +2081,58 @@ CMakeFiles/tidy_util__address.hh.dir/clean:
 .PHONY : CMakeFiles/tidy_util__address.hh.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/tidy_util__arp_message.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_util__arp_message.cc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.cc.dir/build.make CMakeFiles/tidy_util__arp_message.cc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.cc.dir/build.make CMakeFiles/tidy_util__arp_message.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_util__arp_message.cc"
+.PHONY : CMakeFiles/tidy_util__arp_message.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_util__arp_message.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_util__arp_message.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_util__arp_message.cc.dir/rule
+
+# Convenience name for target.
+tidy_util__arp_message.cc: CMakeFiles/tidy_util__arp_message.cc.dir/rule
+.PHONY : tidy_util__arp_message.cc
+
+# clean rule for target.
+CMakeFiles/tidy_util__arp_message.cc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.cc.dir/build.make CMakeFiles/tidy_util__arp_message.cc.dir/clean
+.PHONY : CMakeFiles/tidy_util__arp_message.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_util__arp_message.hh.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_util__arp_message.hh.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.hh.dir/build.make CMakeFiles/tidy_util__arp_message.hh.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.hh.dir/build.make CMakeFiles/tidy_util__arp_message.hh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_util__arp_message.hh"
+.PHONY : CMakeFiles/tidy_util__arp_message.hh.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_util__arp_message.hh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_util__arp_message.hh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_util__arp_message.hh.dir/rule
+
+# Convenience name for target.
+tidy_util__arp_message.hh: CMakeFiles/tidy_util__arp_message.hh.dir/rule
+.PHONY : tidy_util__arp_message.hh
+
+# clean rule for target.
+CMakeFiles/tidy_util__arp_message.hh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__arp_message.hh.dir/build.make CMakeFiles/tidy_util__arp_message.hh.dir/clean
+.PHONY : CMakeFiles/tidy_util__arp_message.hh.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tidy_util__checksum.hh.dir
 
 # All Build rule for target.
@@ -1990,6 +2157,84 @@ tidy_util__checksum.hh: CMakeFiles/tidy_util__checksum.hh.dir/rule
 CMakeFiles/tidy_util__checksum.hh.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__checksum.hh.dir/build.make CMakeFiles/tidy_util__checksum.hh.dir/clean
 .PHONY : CMakeFiles/tidy_util__checksum.hh.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_util__ethernet_frame.hh.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_util__ethernet_frame.hh.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_frame.hh.dir/build.make CMakeFiles/tidy_util__ethernet_frame.hh.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_frame.hh.dir/build.make CMakeFiles/tidy_util__ethernet_frame.hh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_util__ethernet_frame.hh"
+.PHONY : CMakeFiles/tidy_util__ethernet_frame.hh.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_util__ethernet_frame.hh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_util__ethernet_frame.hh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_util__ethernet_frame.hh.dir/rule
+
+# Convenience name for target.
+tidy_util__ethernet_frame.hh: CMakeFiles/tidy_util__ethernet_frame.hh.dir/rule
+.PHONY : tidy_util__ethernet_frame.hh
+
+# clean rule for target.
+CMakeFiles/tidy_util__ethernet_frame.hh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_frame.hh.dir/build.make CMakeFiles/tidy_util__ethernet_frame.hh.dir/clean
+.PHONY : CMakeFiles/tidy_util__ethernet_frame.hh.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_util__ethernet_header.cc.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_util__ethernet_header.cc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.cc.dir/build.make CMakeFiles/tidy_util__ethernet_header.cc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.cc.dir/build.make CMakeFiles/tidy_util__ethernet_header.cc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_util__ethernet_header.cc"
+.PHONY : CMakeFiles/tidy_util__ethernet_header.cc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_util__ethernet_header.cc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_util__ethernet_header.cc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_util__ethernet_header.cc.dir/rule
+
+# Convenience name for target.
+tidy_util__ethernet_header.cc: CMakeFiles/tidy_util__ethernet_header.cc.dir/rule
+.PHONY : tidy_util__ethernet_header.cc
+
+# clean rule for target.
+CMakeFiles/tidy_util__ethernet_header.cc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.cc.dir/build.make CMakeFiles/tidy_util__ethernet_header.cc.dir/clean
+.PHONY : CMakeFiles/tidy_util__ethernet_header.cc.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tidy_util__ethernet_header.hh.dir
+
+# All Build rule for target.
+CMakeFiles/tidy_util__ethernet_header.hh.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.hh.dir/build.make CMakeFiles/tidy_util__ethernet_header.hh.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.hh.dir/build.make CMakeFiles/tidy_util__ethernet_header.hh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target tidy_util__ethernet_header.hh"
+.PHONY : CMakeFiles/tidy_util__ethernet_header.hh.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tidy_util__ethernet_header.hh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tidy_util__ethernet_header.hh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/tidy_util__ethernet_header.hh.dir/rule
+
+# Convenience name for target.
+tidy_util__ethernet_header.hh: CMakeFiles/tidy_util__ethernet_header.hh.dir/rule
+.PHONY : tidy_util__ethernet_header.hh
+
+# clean rule for target.
+CMakeFiles/tidy_util__ethernet_header.hh.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_util__ethernet_header.hh.dir/build.make CMakeFiles/tidy_util__ethernet_header.hh.dir/clean
+.PHONY : CMakeFiles/tidy_util__ethernet_header.hh.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tidy_util__eventloop.cc.dir
@@ -2777,6 +3022,7 @@ CMakeFiles/tidy_util__udinfo.hh.dir/clean:
 # All Build rule for target.
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_src__byte_stream.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_src__byte_stream_helpers.cc.dir/all
+CMakeFiles/tidy.dir/all: CMakeFiles/tidy_src__network_interface.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_src__reassembler.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_src__tcp_minnow_socket.cc.dir/all
 CMakeFiles/tidy.dir/all: CMakeFiles/tidy_src__tcp_receiver.cc.dir/all
@@ -2815,6 +3061,8 @@ CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_apps__webget.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__byte_stream.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__byte_stream.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__byte_stream_helpers.cc.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__network_interface.cc.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__network_interface.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__reassembler.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__reassembler.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_src__tcp_minnow_socket.cc.dir/all
@@ -2835,6 +3083,8 @@ CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__byte_stream_two_writes.cc.di
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__common.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__common.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__conversions.hh.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__net_interface.cc.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__network_interface_test_harness.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__reassembler_cap.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__reassembler_dup.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__reassembler_holes.cc.dir/all
@@ -2868,7 +3118,12 @@ CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__wrapping_integers_unwrap.cc.
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_tests__wrapping_integers_wrap.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__address.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__address.hh.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__arp_message.cc.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__arp_message.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__checksum.hh.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__ethernet_frame.hh.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__ethernet_header.cc.dir/all
+CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__ethernet_header.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__eventloop.cc.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__eventloop.hh.dir/all
 CMakeFiles/tidy-all.dir/all: CMakeFiles/tidy_util__exception.hh.dir/all
@@ -3779,32 +4034,6 @@ CMakeFiles/check3.dir/clean:
 .PHONY : CMakeFiles/check3.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/check4.dir
-
-# All Build rule for target.
-CMakeFiles/check4.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check4.dir/build.make CMakeFiles/check4.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check4.dir/build.make CMakeFiles/check4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target check4"
-.PHONY : CMakeFiles/check4.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/check4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/check4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
-.PHONY : CMakeFiles/check4.dir/rule
-
-# Convenience name for target.
-check4: CMakeFiles/check4.dir/rule
-.PHONY : check4
-
-# clean rule for target.
-CMakeFiles/check4.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/check4.dir/build.make CMakeFiles/check4.dir/clean
-.PHONY : CMakeFiles/check4.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/check5.dir
 
 # All Build rule for target.
@@ -3829,6 +4058,32 @@ check5: CMakeFiles/check5.dir/rule
 CMakeFiles/check5.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check5.dir/build.make CMakeFiles/check5.dir/clean
 .PHONY : CMakeFiles/check5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/check6.dir
+
+# All Build rule for target.
+CMakeFiles/check6.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/check6.dir/build.make CMakeFiles/check6.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/check6.dir/build.make CMakeFiles/check6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target check6"
+.PHONY : CMakeFiles/check6.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/check6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/check6.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : CMakeFiles/check6.dir/rule
+
+# Convenience name for target.
+check6: CMakeFiles/check6.dir/rule
+.PHONY : check6
+
+# clean rule for target.
+CMakeFiles/check6.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/check6.dir/build.make CMakeFiles/check6.dir/clean
+.PHONY : CMakeFiles/check6.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/speed.dir
@@ -3863,7 +4118,7 @@ CMakeFiles/speed.dir/clean:
 util/CMakeFiles/util_debug.dir/all:
 	$(MAKE) $(MAKESILENT) -f util/CMakeFiles/util_debug.dir/build.make util/CMakeFiles/util_debug.dir/depend
 	$(MAKE) $(MAKESILENT) -f util/CMakeFiles/util_debug.dir/build.make util/CMakeFiles/util_debug.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=73,74,75,76,77,78 "Built target util_debug"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=72,73,74,75,76,77 "Built target util_debug"
 .PHONY : util/CMakeFiles/util_debug.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3915,12 +4170,12 @@ util/CMakeFiles/util_sanitized.dir/clean:
 util/CMakeFiles/util_optimized.dir/all:
 	$(MAKE) $(MAKESILENT) -f util/CMakeFiles/util_optimized.dir/build.make util/CMakeFiles/util_optimized.dir/depend
 	$(MAKE) $(MAKESILENT) -f util/CMakeFiles/util_optimized.dir/build.make util/CMakeFiles/util_optimized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=79,80,81,82,83 "Built target util_optimized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=78,79,80,81,82,83 "Built target util_optimized"
 .PHONY : util/CMakeFiles/util_optimized.dir/all
 
 # Build rule for subdir invocation for target.
 util/CMakeFiles/util_optimized.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 util/CMakeFiles/util_optimized.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : util/CMakeFiles/util_optimized.dir/rule
@@ -3941,7 +4196,7 @@ util/CMakeFiles/util_optimized.dir/clean:
 src/CMakeFiles/minnow_debug.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_debug.dir/build.make src/CMakeFiles/minnow_debug.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=14,15,16,17 "Built target minnow_debug"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=13,14,15,16 "Built target minnow_debug"
 .PHONY : src/CMakeFiles/minnow_debug.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3967,12 +4222,12 @@ src/CMakeFiles/minnow_debug.dir/clean:
 src/CMakeFiles/minnow_sanitized.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_sanitized.dir/build.make src/CMakeFiles/minnow_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=22,23,24,25 "Built target minnow_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=21,22,23,24,25 "Built target minnow_sanitized"
 .PHONY : src/CMakeFiles/minnow_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/minnow_sanitized.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/minnow_sanitized.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : src/CMakeFiles/minnow_sanitized.dir/rule
@@ -3993,7 +4248,7 @@ src/CMakeFiles/minnow_sanitized.dir/clean:
 src/CMakeFiles/minnow_optimized.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/minnow_optimized.dir/build.make src/CMakeFiles/minnow_optimized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=18,19,20,21 "Built target minnow_optimized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=17,18,19,20 "Built target minnow_optimized"
 .PHONY : src/CMakeFiles/minnow_optimized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4045,12 +4300,12 @@ tests/CMakeFiles/minnow_testing_debug.dir/clean:
 tests/CMakeFiles/minnow_testing_sanitized.dir/all:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/minnow_testing_sanitized.dir/build.make tests/CMakeFiles/minnow_testing_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/minnow_testing_sanitized.dir/build.make tests/CMakeFiles/minnow_testing_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=27 "Built target minnow_testing_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target minnow_testing_sanitized"
 .PHONY : tests/CMakeFiles/minnow_testing_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/minnow_testing_sanitized.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : tests/CMakeFiles/minnow_testing_sanitized.dir/rule
@@ -4132,6 +4387,8 @@ tests/CMakeFiles/functionality_testing.dir/all: tests/CMakeFiles/send_close_sani
 tests/CMakeFiles/functionality_testing.dir/all: tests/CMakeFiles/send_close.dir/all
 tests/CMakeFiles/functionality_testing.dir/all: tests/CMakeFiles/send_extra_sanitized.dir/all
 tests/CMakeFiles/functionality_testing.dir/all: tests/CMakeFiles/send_extra.dir/all
+tests/CMakeFiles/functionality_testing.dir/all: tests/CMakeFiles/net_interface_sanitized.dir/all
+tests/CMakeFiles/functionality_testing.dir/all: tests/CMakeFiles/net_interface.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/functionality_testing.dir/build.make tests/CMakeFiles/functionality_testing.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/functionality_testing.dir/build.make tests/CMakeFiles/functionality_testing.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target functionality_testing"
@@ -4139,7 +4396,7 @@ tests/CMakeFiles/functionality_testing.dir/all: tests/CMakeFiles/send_extra.dir/
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/functionality_testing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 84
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 85
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/functionality_testing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : tests/CMakeFiles/functionality_testing.dir/rule
@@ -4525,7 +4782,7 @@ tests/CMakeFiles/reassembler_single_sanitized.dir/all: src/CMakeFiles/minnow_san
 tests/CMakeFiles/reassembler_single_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_single_sanitized.dir/build.make tests/CMakeFiles/reassembler_single_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_single_sanitized.dir/build.make tests/CMakeFiles/reassembler_single_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=39 "Built target reassembler_single_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=40 "Built target reassembler_single_sanitized"
 .PHONY : tests/CMakeFiles/reassembler_single_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4553,7 +4810,7 @@ tests/CMakeFiles/reassembler_single.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/reassembler_single.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_single.dir/build.make tests/CMakeFiles/reassembler_single.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_single.dir/build.make tests/CMakeFiles/reassembler_single.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=38 "Built target reassembler_single"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=39 "Built target reassembler_single"
 .PHONY : tests/CMakeFiles/reassembler_single.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4581,7 +4838,7 @@ tests/CMakeFiles/reassembler_cap_sanitized.dir/all: src/CMakeFiles/minnow_saniti
 tests/CMakeFiles/reassembler_cap_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_cap_sanitized.dir/build.make tests/CMakeFiles/reassembler_cap_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_cap_sanitized.dir/build.make tests/CMakeFiles/reassembler_cap_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=29 "Built target reassembler_cap_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=30 "Built target reassembler_cap_sanitized"
 .PHONY : tests/CMakeFiles/reassembler_cap_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4609,7 +4866,7 @@ tests/CMakeFiles/reassembler_cap.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/reassembler_cap.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_cap.dir/build.make tests/CMakeFiles/reassembler_cap.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_cap.dir/build.make tests/CMakeFiles/reassembler_cap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=28 "Built target reassembler_cap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=29 "Built target reassembler_cap"
 .PHONY : tests/CMakeFiles/reassembler_cap.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4637,7 +4894,7 @@ tests/CMakeFiles/reassembler_seq_sanitized.dir/all: src/CMakeFiles/minnow_saniti
 tests/CMakeFiles/reassembler_seq_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_seq_sanitized.dir/build.make tests/CMakeFiles/reassembler_seq_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_seq_sanitized.dir/build.make tests/CMakeFiles/reassembler_seq_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=37 "Built target reassembler_seq_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=38 "Built target reassembler_seq_sanitized"
 .PHONY : tests/CMakeFiles/reassembler_seq_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4665,7 +4922,7 @@ tests/CMakeFiles/reassembler_seq.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/reassembler_seq.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_seq.dir/build.make tests/CMakeFiles/reassembler_seq.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_seq.dir/build.make tests/CMakeFiles/reassembler_seq.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=36 "Built target reassembler_seq"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=37 "Built target reassembler_seq"
 .PHONY : tests/CMakeFiles/reassembler_seq.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4693,7 +4950,7 @@ tests/CMakeFiles/reassembler_dup_sanitized.dir/all: src/CMakeFiles/minnow_saniti
 tests/CMakeFiles/reassembler_dup_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_dup_sanitized.dir/build.make tests/CMakeFiles/reassembler_dup_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_dup_sanitized.dir/build.make tests/CMakeFiles/reassembler_dup_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=31 "Built target reassembler_dup_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=32 "Built target reassembler_dup_sanitized"
 .PHONY : tests/CMakeFiles/reassembler_dup_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4721,7 +4978,7 @@ tests/CMakeFiles/reassembler_dup.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/reassembler_dup.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_dup.dir/build.make tests/CMakeFiles/reassembler_dup.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_dup.dir/build.make tests/CMakeFiles/reassembler_dup.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=30 "Built target reassembler_dup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=31 "Built target reassembler_dup"
 .PHONY : tests/CMakeFiles/reassembler_dup.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4749,7 +5006,7 @@ tests/CMakeFiles/reassembler_holes_sanitized.dir/all: src/CMakeFiles/minnow_sani
 tests/CMakeFiles/reassembler_holes_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_holes_sanitized.dir/build.make tests/CMakeFiles/reassembler_holes_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_holes_sanitized.dir/build.make tests/CMakeFiles/reassembler_holes_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=33 "Built target reassembler_holes_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=34 "Built target reassembler_holes_sanitized"
 .PHONY : tests/CMakeFiles/reassembler_holes_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4777,7 +5034,7 @@ tests/CMakeFiles/reassembler_holes.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/reassembler_holes.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_holes.dir/build.make tests/CMakeFiles/reassembler_holes.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_holes.dir/build.make tests/CMakeFiles/reassembler_holes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=32 "Built target reassembler_holes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=33 "Built target reassembler_holes"
 .PHONY : tests/CMakeFiles/reassembler_holes.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4805,7 +5062,7 @@ tests/CMakeFiles/reassembler_overlapping_sanitized.dir/all: src/CMakeFiles/minno
 tests/CMakeFiles/reassembler_overlapping_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_overlapping_sanitized.dir/build.make tests/CMakeFiles/reassembler_overlapping_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_overlapping_sanitized.dir/build.make tests/CMakeFiles/reassembler_overlapping_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=35 "Built target reassembler_overlapping_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=36 "Built target reassembler_overlapping_sanitized"
 .PHONY : tests/CMakeFiles/reassembler_overlapping_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4833,7 +5090,7 @@ tests/CMakeFiles/reassembler_overlapping.dir/all: src/CMakeFiles/minnow_debug.di
 tests/CMakeFiles/reassembler_overlapping.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_overlapping.dir/build.make tests/CMakeFiles/reassembler_overlapping.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_overlapping.dir/build.make tests/CMakeFiles/reassembler_overlapping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=34 "Built target reassembler_overlapping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=35 "Built target reassembler_overlapping"
 .PHONY : tests/CMakeFiles/reassembler_overlapping.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5253,12 +5510,12 @@ tests/CMakeFiles/recv_transmit_sanitized.dir/all: src/CMakeFiles/minnow_sanitize
 tests/CMakeFiles/recv_transmit_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_transmit_sanitized.dir/build.make tests/CMakeFiles/recv_transmit_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_transmit_sanitized.dir/build.make tests/CMakeFiles/recv_transmit_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=53 "Built target recv_transmit_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target recv_transmit_sanitized"
 .PHONY : tests/CMakeFiles/recv_transmit_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/recv_transmit_sanitized.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/recv_transmit_sanitized.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : tests/CMakeFiles/recv_transmit_sanitized.dir/rule
@@ -5281,7 +5538,7 @@ tests/CMakeFiles/recv_transmit.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/recv_transmit.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_transmit.dir/build.make tests/CMakeFiles/recv_transmit.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_transmit.dir/build.make tests/CMakeFiles/recv_transmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=52 "Built target recv_transmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=53 "Built target recv_transmit"
 .PHONY : tests/CMakeFiles/recv_transmit.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5533,7 +5790,7 @@ tests/CMakeFiles/recv_special_sanitized.dir/all: src/CMakeFiles/minnow_sanitized
 tests/CMakeFiles/recv_special_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_special_sanitized.dir/build.make tests/CMakeFiles/recv_special_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_special_sanitized.dir/build.make tests/CMakeFiles/recv_special_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=51 "Built target recv_special_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=52 "Built target recv_special_sanitized"
 .PHONY : tests/CMakeFiles/recv_special_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5561,12 +5818,12 @@ tests/CMakeFiles/recv_special.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/recv_special.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_special.dir/build.make tests/CMakeFiles/recv_special.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/recv_special.dir/build.make tests/CMakeFiles/recv_special.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target recv_special"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=51 "Built target recv_special"
 .PHONY : tests/CMakeFiles/recv_special.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/recv_special.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/recv_special.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : tests/CMakeFiles/recv_special.dir/rule
@@ -5645,12 +5902,12 @@ tests/CMakeFiles/send_transmit_sanitized.dir/all: src/CMakeFiles/minnow_sanitize
 tests/CMakeFiles/send_transmit_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/send_transmit_sanitized.dir/build.make tests/CMakeFiles/send_transmit_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/send_transmit_sanitized.dir/build.make tests/CMakeFiles/send_transmit_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=67 "Built target send_transmit_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target send_transmit_sanitized"
 .PHONY : tests/CMakeFiles/send_transmit_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/send_transmit_sanitized.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/send_transmit_sanitized.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : tests/CMakeFiles/send_transmit_sanitized.dir/rule
@@ -5757,7 +6014,7 @@ tests/CMakeFiles/send_window_sanitized.dir/all: src/CMakeFiles/minnow_sanitized.
 tests/CMakeFiles/send_window_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/send_window_sanitized.dir/build.make tests/CMakeFiles/send_window_sanitized.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/send_window_sanitized.dir/build.make tests/CMakeFiles/send_window_sanitized.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=69 "Built target send_window_sanitized"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=68 "Built target send_window_sanitized"
 .PHONY : tests/CMakeFiles/send_window_sanitized.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5785,7 +6042,7 @@ tests/CMakeFiles/send_window.dir/all: src/CMakeFiles/minnow_debug.dir/all
 tests/CMakeFiles/send_window.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/send_window.dir/build.make tests/CMakeFiles/send_window.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/send_window.dir/build.make tests/CMakeFiles/send_window.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=68 "Built target send_window"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=67 "Built target send_window"
 .PHONY : tests/CMakeFiles/send_window.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5973,6 +6230,62 @@ tests/CMakeFiles/send_extra.dir/clean:
 .PHONY : tests/CMakeFiles/send_extra.dir/clean
 
 #=============================================================================
+# Target rules for target tests/CMakeFiles/net_interface_sanitized.dir
+
+# All Build rule for target.
+tests/CMakeFiles/net_interface_sanitized.dir/all: util/CMakeFiles/util_sanitized.dir/all
+tests/CMakeFiles/net_interface_sanitized.dir/all: src/CMakeFiles/minnow_sanitized.dir/all
+tests/CMakeFiles/net_interface_sanitized.dir/all: tests/CMakeFiles/minnow_testing_sanitized.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=28 "Built target net_interface_sanitized"
+.PHONY : tests/CMakeFiles/net_interface_sanitized.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/net_interface_sanitized.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/net_interface_sanitized.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : tests/CMakeFiles/net_interface_sanitized.dir/rule
+
+# Convenience name for target.
+net_interface_sanitized: tests/CMakeFiles/net_interface_sanitized.dir/rule
+.PHONY : net_interface_sanitized
+
+# clean rule for target.
+tests/CMakeFiles/net_interface_sanitized.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface_sanitized.dir/build.make tests/CMakeFiles/net_interface_sanitized.dir/clean
+.PHONY : tests/CMakeFiles/net_interface_sanitized.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/net_interface.dir
+
+# All Build rule for target.
+tests/CMakeFiles/net_interface.dir/all: util/CMakeFiles/util_debug.dir/all
+tests/CMakeFiles/net_interface.dir/all: src/CMakeFiles/minnow_debug.dir/all
+tests/CMakeFiles/net_interface.dir/all: tests/CMakeFiles/minnow_testing_debug.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=27 "Built target net_interface"
+.PHONY : tests/CMakeFiles/net_interface.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/net_interface.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/net_interface.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
+.PHONY : tests/CMakeFiles/net_interface.dir/rule
+
+# Convenience name for target.
+net_interface: tests/CMakeFiles/net_interface.dir/rule
+.PHONY : net_interface
+
+# clean rule for target.
+tests/CMakeFiles/net_interface.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/net_interface.dir/build.make tests/CMakeFiles/net_interface.dir/clean
+.PHONY : tests/CMakeFiles/net_interface.dir/clean
+
+#=============================================================================
 # Target rules for target tests/CMakeFiles/byte_stream_speed_test.dir
 
 # All Build rule for target.
@@ -5985,7 +6298,7 @@ tests/CMakeFiles/byte_stream_speed_test.dir/all: src/CMakeFiles/minnow_optimized
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/byte_stream_speed_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/byte_stream_speed_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cs144/minnow/fpo/CMakeFiles 0
 .PHONY : tests/CMakeFiles/byte_stream_speed_test.dir/rule
@@ -6007,7 +6320,7 @@ tests/CMakeFiles/reassembler_speed_test.dir/all: util/CMakeFiles/util_optimized.
 tests/CMakeFiles/reassembler_speed_test.dir/all: src/CMakeFiles/minnow_optimized.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_speed_test.dir/build.make tests/CMakeFiles/reassembler_speed_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/reassembler_speed_test.dir/build.make tests/CMakeFiles/reassembler_speed_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=40 "Built target reassembler_speed_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num= "Built target reassembler_speed_test"
 .PHONY : tests/CMakeFiles/reassembler_speed_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6033,7 +6346,7 @@ tests/CMakeFiles/reassembler_speed_test.dir/clean:
 apps/CMakeFiles/stream_copy.dir/all:
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_copy.dir/build.make apps/CMakeFiles/stream_copy.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_copy.dir/build.make apps/CMakeFiles/stream_copy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=70 "Built target stream_copy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=69 "Built target stream_copy"
 .PHONY : apps/CMakeFiles/stream_copy.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6089,7 +6402,7 @@ apps/CMakeFiles/tcp_native.dir/all: src/CMakeFiles/minnow_debug.dir/all
 apps/CMakeFiles/tcp_native.dir/all: apps/CMakeFiles/stream_copy.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native.dir/build.make apps/CMakeFiles/tcp_native.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native.dir/build.make apps/CMakeFiles/tcp_native.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=72 "Built target tcp_native"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=71 "Built target tcp_native"
 .PHONY : apps/CMakeFiles/tcp_native.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6117,7 +6430,7 @@ apps/CMakeFiles/tcp_ipv4.dir/all: src/CMakeFiles/minnow_debug.dir/all
 apps/CMakeFiles/tcp_ipv4.dir/all: apps/CMakeFiles/stream_copy.dir/all
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4.dir/build.make apps/CMakeFiles/tcp_ipv4.dir/depend
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4.dir/build.make apps/CMakeFiles/tcp_ipv4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=71 "Built target tcp_ipv4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cs144/minnow/fpo/CMakeFiles --progress-num=70 "Built target tcp_ipv4"
 .PHONY : apps/CMakeFiles/tcp_ipv4.dir/all
 
 # Build rule for subdir invocation for target.

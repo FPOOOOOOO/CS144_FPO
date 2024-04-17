@@ -1,124 +1,188 @@
-Start testing: Apr 15 10:11 UTC
+Start testing: Apr 16 16:20 UTC
 ----------------------------------------------------------
 1/39 Testing: compile with bug-checkers
 1/39 Test: compile with bug-checkers
 Command: "/usr/bin/cmake" "--build" "/home/cs144/minnow/fpo" "-t" "functionality_testing" "webget"
 Directory: /home/cs144/minnow/fpo
-"compile with bug-checkers" start time: Apr 15 10:11 UTC
+"compile with bug-checkers" start time: Apr 16 16:20 UTC
 Output:
 ----------------------------------------------------------
 make[4]: warning: -j2 forced in submake: resetting jobserver mode.
 [  1%] Built target minnow_testing_debug
 [  8%] Built target util_debug
-[ 13%] Built target minnow_debug
-[ 14%] Built target minnow_testing_sanitized
-[ 21%] Built target util_sanitized
-[ 26%] Built target minnow_sanitized
-[ 27%] Built target byte_stream_capacity
-[ 27%] Built target byte_stream_basics
-[ 28%] Built target byte_stream_one_write_sanitized
-[ 29%] Built target byte_stream_one_write
-[ 30%] Built target byte_stream_two_writes_sanitized
-[ 32%] Built target byte_stream_two_writes
-[ 33%] Built target byte_stream_many_writes_sanitized
-[ 34%] Built target byte_stream_many_writes
-[ 35%] Built target byte_stream_stress_test_sanitized
-[ 36%] Built target byte_stream_stress_test
-[ 38%] Built target reassembler_single_sanitized
-[ 39%] Built target reassembler_single
-[ 40%] Built target reassembler_cap_sanitized
-[ 41%] Built target reassembler_cap
-[ 42%] Built target reassembler_seq_sanitized
-[ 44%] Built target reassembler_seq
-[ 45%] Built target reassembler_dup_sanitized
-[ 46%] Built target reassembler_dup
-[ 47%] Built target reassembler_holes_sanitized
-[ 48%] Built target reassembler_holes
-[ 50%] Built target reassembler_overlapping_sanitized
-[ 51%] Built target reassembler_overlapping
-[ 52%] Built target reassembler_win_sanitized
-[ 53%] Built target reassembler_win
-[ 54%] Built target wrapping_integers_cmp_sanitized
-[ 55%] Built target wrapping_integers_cmp
-[ 57%] Built target wrapping_integers_wrap_sanitized
-[ 58%] Built target wrapping_integers_wrap
-[ 60%] Built target wrapping_integers_unwrap_sanitized
-[ 60%] Built target wrapping_integers_unwrap
-[ 63%] Built target wrapping_integers_roundtrip_sanitized
-[ 63%] Built target wrapping_integers_roundtrip
-[ 65%] Built target wrapping_integers_extra_sanitized
-[ 65%] Built target wrapping_integers_extra
-[ 67%] Built target recv_connect_sanitized
-[ 67%] Built target recv_connect
-[ 69%] Built target recv_transmit_sanitized
-[ 70%] Built target recv_transmit
-[ 71%] Built target recv_window_sanitized
-[ 72%] Built target recv_window
-[ 73%] Built target recv_reorder_sanitized
-[ 75%] Built target recv_reorder
-[ 76%] Built target recv_reorder_more_sanitized
-[ 77%] Built target recv_reorder_more
-[ 78%] Built target recv_close_sanitized
-[ 79%] Built target recv_close
-[ 80%] Built target recv_special_sanitized
-[ 80%] Built target recv_special
-[ 82%] Built target send_connect_sanitized
-[ 83%] Built target send_connect
-[ 84%] Built target send_transmit
-[ 85%] Built target send_transmit_sanitized
-[ 86%] Built target send_retx_sanitized
-[ 88%] Built target send_retx
-[ 89%] Built target send_window_sanitized
-[ 90%] Built target send_window
-[ 91%] Built target send_ack_sanitized
-[ 92%] Built target send_ack
-[ 95%] Built target send_close_sanitized
-[ 95%] Built target send_close
-[ 96%] Built target send_extra_sanitized
-[ 97%] Built target send_extra
-[ 98%] Built target byte_stream_basics_sanitized
-[100%] Built target byte_stream_capacity_sanitized
+[  8%] [32mBuilding CXX object src/CMakeFiles/minnow_debug.dir/network_interface.cc.o[0m
+[  8%] Built target minnow_testing_sanitized
+[ 15%] Built target util_sanitized
+[ 16%] [32mBuilding CXX object src/CMakeFiles/minnow_sanitized.dir/network_interface.cc.o[0m
+[ 16%] [32m[1mLinking CXX static library libminnow_debug.a[0m
+[ 21%] Built target minnow_debug
+[ 21%] [32m[1mLinking CXX executable net_interface[0m
+[ 22%] Built target net_interface
+[ 22%] [32m[1mLinking CXX executable byte_stream_basics[0m
+[ 22%] Built target byte_stream_basics
+[ 22%] [32m[1mLinking CXX executable byte_stream_capacity[0m
+[ 23%] Built target byte_stream_capacity
+[ 23%] [32m[1mLinking CXX executable byte_stream_one_write[0m
+[ 24%] [32m[1mLinking CXX static library libminnow_sanitized.a[0m
+[ 25%] Built target byte_stream_one_write
+[ 27%] [32m[1mLinking CXX executable byte_stream_two_writes[0m
+[ 27%] Built target byte_stream_two_writes
+[ 27%] [32m[1mLinking CXX executable byte_stream_many_writes[0m
+[ 30%] Built target minnow_sanitized
+[ 31%] [32m[1mLinking CXX executable byte_stream_stress_test[0m
+[ 32%] Built target byte_stream_many_writes
+[ 34%] [32m[1mLinking CXX executable reassembler_single_sanitized[0m
+[ 34%] Built target byte_stream_stress_test
+[ 35%] [32m[1mLinking CXX executable reassembler_single[0m
+[ 35%] Built target reassembler_single_sanitized
+[ 35%] [32m[1mLinking CXX executable reassembler_cap_sanitized[0m
+[ 35%] Built target reassembler_single
+[ 35%] [32m[1mLinking CXX executable reassembler_cap[0m
+[ 36%] Built target reassembler_cap_sanitized
+[ 37%] [32m[1mLinking CXX executable reassembler_seq_sanitized[0m
+[ 38%] Built target reassembler_cap
+[ 40%] [32m[1mLinking CXX executable reassembler_seq[0m
+[ 40%] Built target reassembler_seq_sanitized
+[ 40%] Built target reassembler_seq
+[ 40%] [32m[1mLinking CXX executable reassembler_dup_sanitized[0m
+[ 40%] [32m[1mLinking CXX executable reassembler_dup[0m
+[ 41%] Built target reassembler_dup
+[ 42%] [32m[1mLinking CXX executable reassembler_holes_sanitized[0m
+[ 43%] Built target reassembler_dup_sanitized
+[ 43%] [32m[1mLinking CXX executable reassembler_holes[0m
+[ 43%] Built target reassembler_holes_sanitized
+[ 44%] [32m[1mLinking CXX executable reassembler_overlapping_sanitized[0m
+[ 45%] Built target reassembler_holes
+[ 47%] [32m[1mLinking CXX executable reassembler_overlapping[0m
+[ 47%] Built target reassembler_overlapping_sanitized
+[ 47%] [32m[1mLinking CXX executable reassembler_win_sanitized[0m
+[ 47%] Built target reassembler_overlapping
+[ 47%] [32m[1mLinking CXX executable reassembler_win[0m
+[ 48%] Built target reassembler_win_sanitized
+[ 48%] [32m[1mLinking CXX executable wrapping_integers_cmp_sanitized[0m
+[ 49%] Built target reassembler_win
+[ 50%] Built target wrapping_integers_cmp_sanitized
+[ 50%] [32m[1mLinking CXX executable wrapping_integers_cmp[0m
+[ 51%] [32m[1mLinking CXX executable wrapping_integers_wrap_sanitized[0m
+[ 51%] Built target wrapping_integers_wrap_sanitized
+[ 52%] Built target wrapping_integers_cmp
+[ 54%] [32m[1mLinking CXX executable wrapping_integers_wrap[0m
+[ 55%] [32m[1mLinking CXX executable wrapping_integers_unwrap_sanitized[0m
+[ 55%] Built target wrapping_integers_wrap
+[ 56%] [32m[1mLinking CXX executable wrapping_integers_unwrap[0m
+[ 56%] Built target wrapping_integers_unwrap_sanitized
+[ 57%] [32m[1mLinking CXX executable wrapping_integers_roundtrip_sanitized[0m
+[ 57%] Built target wrapping_integers_unwrap
+[ 58%] [32m[1mLinking CXX executable wrapping_integers_roundtrip[0m
+[ 58%] Built target wrapping_integers_roundtrip_sanitized
+[ 60%] [32m[1mLinking CXX executable wrapping_integers_extra_sanitized[0m
+[ 60%] Built target wrapping_integers_roundtrip
+[ 60%] Built target wrapping_integers_extra_sanitized
+[ 60%] [32m[1mLinking CXX executable wrapping_integers_extra[0m
+[ 60%] [32m[1mLinking CXX executable recv_connect_sanitized[0m
+[ 61%] Built target wrapping_integers_extra
+[ 61%] [32m[1mLinking CXX executable recv_connect[0m
+[ 62%] Built target recv_connect_sanitized
+[ 62%] [32m[1mLinking CXX executable recv_transmit_sanitized[0m
+[ 63%] Built target recv_connect
+[ 64%] [32m[1mLinking CXX executable recv_transmit[0m
+[ 64%] Built target recv_transmit
+[ 64%] Built target recv_transmit_sanitized
+[ 64%] [32m[1mLinking CXX executable recv_window_sanitized[0m
+[ 64%] [32m[1mLinking CXX executable recv_window[0m
+[ 65%] Built target recv_window
+[ 67%] Built target recv_window_sanitized
+[ 68%] [32m[1mLinking CXX executable recv_reorder_sanitized[0m
+[ 69%] [32m[1mLinking CXX executable recv_reorder[0m
+[ 69%] Built target recv_reorder
+[ 69%] Built target recv_reorder_sanitized
+[ 70%] [32m[1mLinking CXX executable recv_reorder_more_sanitized[0m
+[ 71%] [32m[1mLinking CXX executable recv_reorder_more[0m
+[ 71%] Built target recv_reorder_more
+[ 71%] Built target recv_reorder_more_sanitized
+[ 71%] [32m[1mLinking CXX executable recv_close_sanitized[0m
+[ 71%] [32m[1mLinking CXX executable recv_close[0m
+[ 72%] Built target recv_close
+[ 74%] Built target recv_close_sanitized
+[ 75%] [32m[1mLinking CXX executable recv_special_sanitized[0m
+[ 76%] [32m[1mLinking CXX executable recv_special[0m
+[ 76%] Built target recv_special
+[ 76%] Built target recv_special_sanitized
+[ 77%] [32m[1mLinking CXX executable send_connect_sanitized[0m
+[ 77%] [32m[1mLinking CXX executable send_connect[0m
+[ 78%] Built target send_connect
+[ 78%] Built target send_connect_sanitized
+[ 78%] [32m[1mLinking CXX executable send_transmit_sanitized[0m
+[ 80%] [32m[1mLinking CXX executable send_transmit[0m
+[ 80%] Built target send_transmit
+[ 81%] [32m[1mLinking CXX executable send_retx_sanitized[0m
+[ 81%] Built target send_transmit_sanitized
+[ 82%] [32m[1mLinking CXX executable send_retx[0m
+[ 82%] Built target send_retx_sanitized
+[ 82%] [32m[1mLinking CXX executable send_window_sanitized[0m
+[ 82%] Built target send_retx
+[ 82%] [32m[1mLinking CXX executable send_window[0m
+[ 83%] Built target send_window_sanitized
+[ 83%] [32m[1mLinking CXX executable send_ack_sanitized[0m
+[ 84%] Built target send_window
+[ 85%] Built target send_ack_sanitized
+[ 85%] [32m[1mLinking CXX executable send_ack[0m
+[ 85%] [32m[1mLinking CXX executable send_close_sanitized[0m
+[ 87%] Built target send_ack
+[ 88%] Built target send_close_sanitized
+[ 88%] [32m[1mLinking CXX executable send_close[0m
+[ 89%] [32m[1mLinking CXX executable send_extra_sanitized[0m
+[ 90%] Built target send_close
+[ 90%] Built target send_extra_sanitized
+[ 91%] [32m[1mLinking CXX executable send_extra[0m
+[ 91%] [32m[1mLinking CXX executable net_interface_sanitized[0m
+[ 91%] Built target send_extra
+[ 91%] [32m[1mLinking CXX executable byte_stream_basics_sanitized[0m
+[ 92%] Built target net_interface_sanitized
+[ 92%] [32m[1mLinking CXX executable byte_stream_capacity_sanitized[0m
+[ 94%] Built target byte_stream_basics_sanitized
+[ 95%] Built target byte_stream_capacity_sanitized
+[ 96%] [32m[1mLinking CXX executable byte_stream_one_write_sanitized[0m
+[ 97%] [32m[1mLinking CXX executable byte_stream_two_writes_sanitized[0m
+[ 97%] Built target byte_stream_two_writes_sanitized
+[ 97%] Built target byte_stream_one_write_sanitized
+[ 98%] [32m[1mLinking CXX executable byte_stream_stress_test_sanitized[0m
+[ 98%] [32m[1mLinking CXX executable byte_stream_many_writes_sanitized[0m
+[100%] Built target byte_stream_many_writes_sanitized
+[100%] Built target byte_stream_stress_test_sanitized
 [100%] Built target functionality_testing
 [  8%] Built target stream_copy
 [ 58%] Built target util_debug
 [ 91%] Built target minnow_debug
-[ 91%] [32mBuilding CXX object apps/CMakeFiles/webget.dir/webget.cc.o[0m
-[100%] [32m[1mLinking CXX executable webget[0m
+[ 91%] [32m[1mLinking CXX executable webget[0m
 [100%] Built target webget
 <end of output>
-Test time =   4.98 sec
+Test time =  14.71 sec
 ----------------------------------------------------------
 Test Passed.
-"compile with bug-checkers" end time: Apr 15 10:11 UTC
-"compile with bug-checkers" time elapsed: 00:00:04
+"compile with bug-checkers" end time: Apr 16 16:20 UTC
+"compile with bug-checkers" time elapsed: 00:00:14
 ----------------------------------------------------------
 
-2/39 Testing: t_webget
-2/39 Test: t_webget
-Command: "/home/cs144/minnow/tests/webget_t.sh" "/home/cs144/minnow/fpo"
+35/39 Testing: net_interface
+35/39 Test: net_interface
+Command: "/home/cs144/minnow/fpo/tests/net_interface_sanitized"
 Directory: /home/cs144/minnow/fpo
-"t_webget" start time: Apr 15 10:11 UTC
+"net_interface" start time: Apr 16 16:20 UTC
 Output:
 ----------------------------------------------------------
-DEBUG: minnow connecting to 104.196.238.229:80...
-DEBUG: minnow successfully connected to 104.196.238.229:80.
-HTTP/1.1 200 OK
-Content-type: text/plain
-
-7SmXqWkrLKzVBCEalbSPqBcvs11Pw263K7x4Wv3JckI
-DEBUG: minnow inbound stream from 104.196.238.229:80 finished cleanly.
-Function called: get_URL(cs144.keithw.org, /nph-hasher/xyzzy)
-Warning: unclean shutdown of TCPMinnowSocket
-DEBUG: minnow outbound stream to 104.196.238.229:80 finished (0 seqnos still in flight).
-Exception in TCPConnection runner thread: shutdown: Bad file descriptor
-terminate called after throwing an instance of 'std::exception'
-  what():  std::exception
+DEBUG: Network interface has Ethernet address 7e:78:fd:8f:dc:8b and IP address 4.3.2.1
+DEBUG: Network interface has Ethernet address 4a:de:84:b3:32:f7 and IP address 5.5.5.5
+DEBUG: Network interface has Ethernet address 86:ba:6e:bc:5c:bc and IP address 5.5.5.5
+DEBUG: Network interface has Ethernet address c6:0a:c4:08:7e:00 and IP address 1.2.3.4
+DEBUG: Network interface has Ethernet address 02:fe:a4:e4:0d:75 and IP address 4.3.2.1
+DEBUG: Network interface has Ethernet address 32:22:ba:1f:6d:25 and IP address 10.0.0.1
 <end of output>
-Test time =   1.47 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"t_webget" end time: Apr 15 10:11 UTC
-"t_webget" time elapsed: 00:00:01
+"net_interface" end time: Apr 16 16:20 UTC
+"net_interface" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 15 10:11 UTC
+End testing: Apr 16 16:20 UTC
