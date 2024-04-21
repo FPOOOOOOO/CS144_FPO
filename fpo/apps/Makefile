@@ -141,6 +141,20 @@ stream_copy/fast:
 .PHONY : stream_copy/fast
 
 # Convenience name for target.
+apps/CMakeFiles/stream_sanitized.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/stream_sanitized.dir/rule
+.PHONY : apps/CMakeFiles/stream_sanitized.dir/rule
+
+# Convenience name for target.
+stream_sanitized: apps/CMakeFiles/stream_sanitized.dir/rule
+.PHONY : stream_sanitized
+
+# fast build rule for target.
+stream_sanitized/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_sanitized.dir/build.make apps/CMakeFiles/stream_sanitized.dir/build
+.PHONY : stream_sanitized/fast
+
+# Convenience name for target.
 apps/CMakeFiles/webget.dir/rule:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/webget.dir/rule
 .PHONY : apps/CMakeFiles/webget.dir/rule
@@ -153,6 +167,20 @@ webget: apps/CMakeFiles/webget.dir/rule
 webget/fast:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/build
 .PHONY : webget/fast
+
+# Convenience name for target.
+apps/CMakeFiles/webget_sanitized.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/webget_sanitized.dir/rule
+.PHONY : apps/CMakeFiles/webget_sanitized.dir/rule
+
+# Convenience name for target.
+webget_sanitized: apps/CMakeFiles/webget_sanitized.dir/rule
+.PHONY : webget_sanitized
+
+# fast build rule for target.
+webget_sanitized/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget_sanitized.dir/build.make apps/CMakeFiles/webget_sanitized.dir/build
+.PHONY : webget_sanitized/fast
 
 # Convenience name for target.
 apps/CMakeFiles/tcp_native.dir/rule:
@@ -169,6 +197,20 @@ tcp_native/fast:
 .PHONY : tcp_native/fast
 
 # Convenience name for target.
+apps/CMakeFiles/tcp_native_sanitized.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/tcp_native_sanitized.dir/rule
+.PHONY : apps/CMakeFiles/tcp_native_sanitized.dir/rule
+
+# Convenience name for target.
+tcp_native_sanitized: apps/CMakeFiles/tcp_native_sanitized.dir/rule
+.PHONY : tcp_native_sanitized
+
+# fast build rule for target.
+tcp_native_sanitized/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native_sanitized.dir/build.make apps/CMakeFiles/tcp_native_sanitized.dir/build
+.PHONY : tcp_native_sanitized/fast
+
+# Convenience name for target.
 apps/CMakeFiles/tcp_ipv4.dir/rule:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/tcp_ipv4.dir/rule
 .PHONY : apps/CMakeFiles/tcp_ipv4.dir/rule
@@ -182,12 +224,55 @@ tcp_ipv4/fast:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4.dir/build.make apps/CMakeFiles/tcp_ipv4.dir/build
 .PHONY : tcp_ipv4/fast
 
+# Convenience name for target.
+apps/CMakeFiles/tcp_ipv4_sanitized.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/tcp_ipv4_sanitized.dir/rule
+.PHONY : apps/CMakeFiles/tcp_ipv4_sanitized.dir/rule
+
+# Convenience name for target.
+tcp_ipv4_sanitized: apps/CMakeFiles/tcp_ipv4_sanitized.dir/rule
+.PHONY : tcp_ipv4_sanitized
+
+# fast build rule for target.
+tcp_ipv4_sanitized/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4_sanitized.dir/build.make apps/CMakeFiles/tcp_ipv4_sanitized.dir/build
+.PHONY : tcp_ipv4_sanitized/fast
+
+# Convenience name for target.
+apps/CMakeFiles/endtoend.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/endtoend.dir/rule
+.PHONY : apps/CMakeFiles/endtoend.dir/rule
+
+# Convenience name for target.
+endtoend: apps/CMakeFiles/endtoend.dir/rule
+.PHONY : endtoend
+
+# fast build rule for target.
+endtoend/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend.dir/build.make apps/CMakeFiles/endtoend.dir/build
+.PHONY : endtoend/fast
+
+# Convenience name for target.
+apps/CMakeFiles/endtoend_sanitized.dir/rule:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps/CMakeFiles/endtoend_sanitized.dir/rule
+.PHONY : apps/CMakeFiles/endtoend_sanitized.dir/rule
+
+# Convenience name for target.
+endtoend_sanitized: apps/CMakeFiles/endtoend_sanitized.dir/rule
+.PHONY : endtoend_sanitized
+
+# fast build rule for target.
+endtoend_sanitized/fast:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend_sanitized.dir/build.make apps/CMakeFiles/endtoend_sanitized.dir/build
+.PHONY : endtoend_sanitized/fast
+
 bidirectional_stream_copy.o: bidirectional_stream_copy.cc.o
 .PHONY : bidirectional_stream_copy.o
 
 # target to build an object file
 bidirectional_stream_copy.cc.o:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_copy.dir/build.make apps/CMakeFiles/stream_copy.dir/bidirectional_stream_copy.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_sanitized.dir/build.make apps/CMakeFiles/stream_sanitized.dir/bidirectional_stream_copy.cc.o
 .PHONY : bidirectional_stream_copy.cc.o
 
 bidirectional_stream_copy.i: bidirectional_stream_copy.cc.i
@@ -196,6 +281,7 @@ bidirectional_stream_copy.i: bidirectional_stream_copy.cc.i
 # target to preprocess a source file
 bidirectional_stream_copy.cc.i:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_copy.dir/build.make apps/CMakeFiles/stream_copy.dir/bidirectional_stream_copy.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_sanitized.dir/build.make apps/CMakeFiles/stream_sanitized.dir/bidirectional_stream_copy.cc.i
 .PHONY : bidirectional_stream_copy.cc.i
 
 bidirectional_stream_copy.s: bidirectional_stream_copy.cc.s
@@ -204,7 +290,35 @@ bidirectional_stream_copy.s: bidirectional_stream_copy.cc.s
 # target to generate assembly for a file
 bidirectional_stream_copy.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_copy.dir/build.make apps/CMakeFiles/stream_copy.dir/bidirectional_stream_copy.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_sanitized.dir/build.make apps/CMakeFiles/stream_sanitized.dir/bidirectional_stream_copy.cc.s
 .PHONY : bidirectional_stream_copy.cc.s
+
+endtoend.o: endtoend.cc.o
+.PHONY : endtoend.o
+
+# target to build an object file
+endtoend.cc.o:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend.dir/build.make apps/CMakeFiles/endtoend.dir/endtoend.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend_sanitized.dir/build.make apps/CMakeFiles/endtoend_sanitized.dir/endtoend.cc.o
+.PHONY : endtoend.cc.o
+
+endtoend.i: endtoend.cc.i
+.PHONY : endtoend.i
+
+# target to preprocess a source file
+endtoend.cc.i:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend.dir/build.make apps/CMakeFiles/endtoend.dir/endtoend.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend_sanitized.dir/build.make apps/CMakeFiles/endtoend_sanitized.dir/endtoend.cc.i
+.PHONY : endtoend.cc.i
+
+endtoend.s: endtoend.cc.s
+.PHONY : endtoend.s
+
+# target to generate assembly for a file
+endtoend.cc.s:
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend.dir/build.make apps/CMakeFiles/endtoend.dir/endtoend.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend_sanitized.dir/build.make apps/CMakeFiles/endtoend_sanitized.dir/endtoend.cc.s
+.PHONY : endtoend.cc.s
 
 tcp_ipv4.o: tcp_ipv4.cc.o
 .PHONY : tcp_ipv4.o
@@ -212,6 +326,7 @@ tcp_ipv4.o: tcp_ipv4.cc.o
 # target to build an object file
 tcp_ipv4.cc.o:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4.dir/build.make apps/CMakeFiles/tcp_ipv4.dir/tcp_ipv4.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4_sanitized.dir/build.make apps/CMakeFiles/tcp_ipv4_sanitized.dir/tcp_ipv4.cc.o
 .PHONY : tcp_ipv4.cc.o
 
 tcp_ipv4.i: tcp_ipv4.cc.i
@@ -220,6 +335,7 @@ tcp_ipv4.i: tcp_ipv4.cc.i
 # target to preprocess a source file
 tcp_ipv4.cc.i:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4.dir/build.make apps/CMakeFiles/tcp_ipv4.dir/tcp_ipv4.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4_sanitized.dir/build.make apps/CMakeFiles/tcp_ipv4_sanitized.dir/tcp_ipv4.cc.i
 .PHONY : tcp_ipv4.cc.i
 
 tcp_ipv4.s: tcp_ipv4.cc.s
@@ -228,6 +344,7 @@ tcp_ipv4.s: tcp_ipv4.cc.s
 # target to generate assembly for a file
 tcp_ipv4.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4.dir/build.make apps/CMakeFiles/tcp_ipv4.dir/tcp_ipv4.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4_sanitized.dir/build.make apps/CMakeFiles/tcp_ipv4_sanitized.dir/tcp_ipv4.cc.s
 .PHONY : tcp_ipv4.cc.s
 
 tcp_native.o: tcp_native.cc.o
@@ -236,6 +353,7 @@ tcp_native.o: tcp_native.cc.o
 # target to build an object file
 tcp_native.cc.o:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native.dir/build.make apps/CMakeFiles/tcp_native.dir/tcp_native.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native_sanitized.dir/build.make apps/CMakeFiles/tcp_native_sanitized.dir/tcp_native.cc.o
 .PHONY : tcp_native.cc.o
 
 tcp_native.i: tcp_native.cc.i
@@ -244,6 +362,7 @@ tcp_native.i: tcp_native.cc.i
 # target to preprocess a source file
 tcp_native.cc.i:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native.dir/build.make apps/CMakeFiles/tcp_native.dir/tcp_native.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native_sanitized.dir/build.make apps/CMakeFiles/tcp_native_sanitized.dir/tcp_native.cc.i
 .PHONY : tcp_native.cc.i
 
 tcp_native.s: tcp_native.cc.s
@@ -252,6 +371,7 @@ tcp_native.s: tcp_native.cc.s
 # target to generate assembly for a file
 tcp_native.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native.dir/build.make apps/CMakeFiles/tcp_native.dir/tcp_native.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native_sanitized.dir/build.make apps/CMakeFiles/tcp_native_sanitized.dir/tcp_native.cc.s
 .PHONY : tcp_native.cc.s
 
 webget.o: webget.cc.o
@@ -260,6 +380,7 @@ webget.o: webget.cc.o
 # target to build an object file
 webget.cc.o:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.o
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget_sanitized.dir/build.make apps/CMakeFiles/webget_sanitized.dir/webget.cc.o
 .PHONY : webget.cc.o
 
 webget.i: webget.cc.i
@@ -268,6 +389,7 @@ webget.i: webget.cc.i
 # target to preprocess a source file
 webget.cc.i:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.i
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget_sanitized.dir/build.make apps/CMakeFiles/webget_sanitized.dir/webget.cc.i
 .PHONY : webget.cc.i
 
 webget.s: webget.cc.s
@@ -276,6 +398,7 @@ webget.s: webget.cc.s
 # target to generate assembly for a file
 webget.cc.s:
 	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/webget.cc.s
+	cd /home/cs144/minnow/fpo && $(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget_sanitized.dir/build.make apps/CMakeFiles/webget_sanitized.dir/webget.cc.s
 .PHONY : webget.cc.s
 
 # Help Target
@@ -287,13 +410,22 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... endtoend"
+	@echo "... endtoend_sanitized"
 	@echo "... stream_copy"
+	@echo "... stream_sanitized"
 	@echo "... tcp_ipv4"
+	@echo "... tcp_ipv4_sanitized"
 	@echo "... tcp_native"
+	@echo "... tcp_native_sanitized"
 	@echo "... webget"
+	@echo "... webget_sanitized"
 	@echo "... bidirectional_stream_copy.o"
 	@echo "... bidirectional_stream_copy.i"
 	@echo "... bidirectional_stream_copy.s"
+	@echo "... endtoend.o"
+	@echo "... endtoend.i"
+	@echo "... endtoend.s"
 	@echo "... tcp_ipv4.o"
 	@echo "... tcp_ipv4.i"
 	@echo "... tcp_ipv4.s"

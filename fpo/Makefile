@@ -166,6 +166,19 @@ tidy_apps__bidirectional_stream_copy.hh/fast:
 .PHONY : tidy_apps__bidirectional_stream_copy.hh/fast
 
 #=============================================================================
+# Target rules for targets named tidy_apps__endtoend.cc
+
+# Build rule for target.
+tidy_apps__endtoend.cc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tidy_apps__endtoend.cc
+.PHONY : tidy_apps__endtoend.cc
+
+# fast build rule for target.
+tidy_apps__endtoend.cc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tidy_apps__endtoend.cc.dir/build.make CMakeFiles/tidy_apps__endtoend.cc.dir/build
+.PHONY : tidy_apps__endtoend.cc/fast
+
+#=============================================================================
 # Target rules for targets named tidy_apps__tcp_ipv4.cc
 
 # Build rule for target.
@@ -3039,6 +3052,19 @@ stream_copy/fast:
 .PHONY : stream_copy/fast
 
 #=============================================================================
+# Target rules for targets named stream_sanitized
+
+# Build rule for target.
+stream_sanitized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stream_sanitized
+.PHONY : stream_sanitized
+
+# fast build rule for target.
+stream_sanitized/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/stream_sanitized.dir/build.make apps/CMakeFiles/stream_sanitized.dir/build
+.PHONY : stream_sanitized/fast
+
+#=============================================================================
 # Target rules for targets named webget
 
 # Build rule for target.
@@ -3050,6 +3076,19 @@ webget: cmake_check_build_system
 webget/fast:
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget.dir/build.make apps/CMakeFiles/webget.dir/build
 .PHONY : webget/fast
+
+#=============================================================================
+# Target rules for targets named webget_sanitized
+
+# Build rule for target.
+webget_sanitized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 webget_sanitized
+.PHONY : webget_sanitized
+
+# fast build rule for target.
+webget_sanitized/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/webget_sanitized.dir/build.make apps/CMakeFiles/webget_sanitized.dir/build
+.PHONY : webget_sanitized/fast
 
 #=============================================================================
 # Target rules for targets named tcp_native
@@ -3065,6 +3104,19 @@ tcp_native/fast:
 .PHONY : tcp_native/fast
 
 #=============================================================================
+# Target rules for targets named tcp_native_sanitized
+
+# Build rule for target.
+tcp_native_sanitized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp_native_sanitized
+.PHONY : tcp_native_sanitized
+
+# fast build rule for target.
+tcp_native_sanitized/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_native_sanitized.dir/build.make apps/CMakeFiles/tcp_native_sanitized.dir/build
+.PHONY : tcp_native_sanitized/fast
+
+#=============================================================================
 # Target rules for targets named tcp_ipv4
 
 # Build rule for target.
@@ -3076,6 +3128,45 @@ tcp_ipv4: cmake_check_build_system
 tcp_ipv4/fast:
 	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4.dir/build.make apps/CMakeFiles/tcp_ipv4.dir/build
 .PHONY : tcp_ipv4/fast
+
+#=============================================================================
+# Target rules for targets named tcp_ipv4_sanitized
+
+# Build rule for target.
+tcp_ipv4_sanitized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tcp_ipv4_sanitized
+.PHONY : tcp_ipv4_sanitized
+
+# fast build rule for target.
+tcp_ipv4_sanitized/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/tcp_ipv4_sanitized.dir/build.make apps/CMakeFiles/tcp_ipv4_sanitized.dir/build
+.PHONY : tcp_ipv4_sanitized/fast
+
+#=============================================================================
+# Target rules for targets named endtoend
+
+# Build rule for target.
+endtoend: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 endtoend
+.PHONY : endtoend
+
+# fast build rule for target.
+endtoend/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend.dir/build.make apps/CMakeFiles/endtoend.dir/build
+.PHONY : endtoend/fast
+
+#=============================================================================
+# Target rules for targets named endtoend_sanitized
+
+# Build rule for target.
+endtoend_sanitized: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 endtoend_sanitized
+.PHONY : endtoend_sanitized
+
+# fast build rule for target.
+endtoend_sanitized/fast:
+	$(MAKE) $(MAKESILENT) -f apps/CMakeFiles/endtoend_sanitized.dir/build.make apps/CMakeFiles/endtoend_sanitized.dir/build
+.PHONY : endtoend_sanitized/fast
 
 # Help Target
 help:
@@ -3129,6 +3220,7 @@ help:
 	@echo "... tidy-all"
 	@echo "... tidy_apps__bidirectional_stream_copy.cc"
 	@echo "... tidy_apps__bidirectional_stream_copy.hh"
+	@echo "... tidy_apps__endtoend.cc"
 	@echo "... tidy_apps__tcp_ipv4.cc"
 	@echo "... tidy_apps__tcp_native.cc"
 	@echo "... tidy_apps__webget.cc"
@@ -3244,6 +3336,8 @@ help:
 	@echo "... byte_stream_stress_test_sanitized"
 	@echo "... byte_stream_two_writes"
 	@echo "... byte_stream_two_writes_sanitized"
+	@echo "... endtoend"
+	@echo "... endtoend_sanitized"
 	@echo "... minnow_debug"
 	@echo "... minnow_optimized"
 	@echo "... minnow_sanitized"
@@ -3297,12 +3391,16 @@ help:
 	@echo "... send_window"
 	@echo "... send_window_sanitized"
 	@echo "... stream_copy"
+	@echo "... stream_sanitized"
 	@echo "... tcp_ipv4"
+	@echo "... tcp_ipv4_sanitized"
 	@echo "... tcp_native"
+	@echo "... tcp_native_sanitized"
 	@echo "... util_debug"
 	@echo "... util_optimized"
 	@echo "... util_sanitized"
 	@echo "... webget"
+	@echo "... webget_sanitized"
 	@echo "... wrapping_integers_cmp"
 	@echo "... wrapping_integers_cmp_sanitized"
 	@echo "... wrapping_integers_extra"
